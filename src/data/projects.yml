@@ -1,0 +1,31 @@
+- project: aepp-sdk-java
+  year: 2019
+  description: A community developed Java SDK to interact with the Æternity blockchain
+  work: fully developed and maintained by kryptokrauts.com
+  links:
+    website:
+    github: https://github.com/kryptokrauts/aepp-sdk-java
+    docs:
+    twitter: https://twitter.com/kryptokrauts
+  tags:
+    - aeternity
+    - java
+    - sdk
+    - blockchain
+    - crypto
+
+- project: ArkaneNetwork
+  year: 2019
+  description: Arkane is a multi-blockchain wallet provider that builds an open network between individuals, ecosystems and dapps
+  work: kryptokrauts delivered the blockchain-provider for aeternity
+  links:
+    website: https://arkane.network/
+    github: https://github.com/ArkaneNetwork/blockchain-providers
+    docs: https://docs.arkane.network/
+    twitter: https://twitter.com/NetworkArkane
+  tags:
+    - multi-blockchain
+    - wallet provider
+    - dapps
+    - blockchain
+    - crypto

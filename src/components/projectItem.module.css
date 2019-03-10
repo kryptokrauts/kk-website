@@ -29,6 +29,11 @@
   margin: 5px;
 }
 
+.content,
+.content > * {
+  margin: 5px 0;
+}
+
 .addionalIcons {
   margin: 0 5px;
 }

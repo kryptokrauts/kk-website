@@ -12,9 +12,11 @@ export default (props) => (
         <a href={props.project.links.docs} title="Documentation"><i className="fas fa-book"></i></a> : ''}</div>
       <Social className={projectItemStyle.socialLinks} providers={props.project.links} />
     </div>
-    <div>{props.project.year}</div>
-    <div>{props.project.description}</div>
-    <div>{props.project.work}</div>
+    <div className={projectItemStyle.content}>
+      <div><i className="fas fa-calendar-alt" title="since"></i> {props.project.year}</div>
+      <div>{props.project.description}</div>
+      <div>{props.project.work}</div>
+    </div>
     <TagList tags={props.project.tags} />
   </div>
 );

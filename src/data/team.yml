@@ -1,0 +1,52 @@
+- name: Marco Walz
+  roles:
+    - Founder
+    - Developer (SDK, Backend, Smart Contract)
+  joined: 2018-01-13
+  company:
+    name: targens GmbH
+    website: https://www.targens.de/
+  profiles:
+    github: https://github.com/marc0olo
+    twitter: https://twitter.com/marc0olo
+    linkedin: https://www.linkedin.com/in/marco-walz-776844141/
+
+- name: Michel Meier
+  roles:
+    - Co-Founder
+    - Developer (SDK, Backend)
+    - Software Architect
+  joined: 2018-01-13
+  company:
+    name: USU GmbH
+    website: https://www.unymira.com
+  profiles:
+    github: https://github.com/mitch-lbw
+    twitter: https://twitter.com/twx_mlb
+    linkedin:
+
+- name: Andreas Müller
+  roles:
+    - Designer
+    - Developer (Frontend)
+  joined: 2018-12-21
+  company:
+    name: targens GmbH
+    website: https://www.targens.de/
+  profiles:
+    github:
+    twitter:
+    linkedin:
+
+- name: Jan-Patrick Weller
+  roles:
+    - UI/UX Expert
+    - Developer (Frontend)
+  joined: 2019-03-10
+  company:
+    name: targens GmbH
+    website: https://www.targens.de/
+  profiles:
+    github: https://github.com/the-icarus
+    twitter:
+    linkedin:

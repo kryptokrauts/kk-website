@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  height: 30px;
+}
+
+.icon {
+  margin: 0 5px;
+  height: 100%;
+  line-height: 100%;
+}
+
+.icon:hover {
+  color: #000;
+}
+
+.icon i {
+  height: 100%;
+}

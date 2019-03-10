@@ -7,8 +7,6 @@ module.exports = {
             twitter: `https://twitter.com/kryptokrauts`
         }
     },
-    // Note: it must *not* have a trailing slash.
-    pathPrefix: `/img`,
     plugins: [
         `gatsby-transformer-yaml`,
         {

@@ -23,13 +23,11 @@ export default class Header extends Component {
   }
 
   componentWillUnmount() {
-    if (this.scrollListener) {
-      window.removeEventListener('scroll', this.scrollHandler.bind(this));
-    }
+    window.removeEventListener('scroll', this.scrollHandler.bind(this));
   }
 
-  componentWillMount() {
-    this.scrollListener = window.addEventListener('scroll', this.scrollHandler.bind(this));
+  componentDidMount() {
+    window.addEventListener('scroll', this.scrollHandler.bind(this));
   }
 
   render() {

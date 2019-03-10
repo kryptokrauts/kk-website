@@ -9,7 +9,7 @@ export default (props) => (
       <div className={projectItemStyle.name}>
         {props.project.project}
         <div className={projectItemStyle.addionalIcons}>{props.project.links.docs ?
-          <a href={props.project.links.docs} title="Documentation"><i class="fas fa-book"></i></a> : ''}</div>
+          <a href={props.project.links.docs} title="Documentation"><i className="fas fa-book"></i></a> : ''}</div>
         <Social className={projectItemStyle.socialLinks} providers={props.project.links} />
       </div>
       <div>{props.project.year}</div>

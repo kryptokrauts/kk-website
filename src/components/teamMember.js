@@ -6,7 +6,10 @@ import teamMemberStyle from "./teamMember.module.css";
 export default (props) => (
   <div className={teamMemberStyle.container}>
     <div className={teamMemberStyle.avatar}>
-      <i className="fas fa-user-secret"></i>
+      {props.member.avatar ?
+        <img src={props.member.avatar} alt="Avatar" />
+        :
+        <i className="fas fa-user-secret"></i>}
     </div>
     <div className={teamMemberStyle.content}>
       <div className={teamMemberStyle.name}>

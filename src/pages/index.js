@@ -34,6 +34,7 @@ export const query = graphql`
       edges {
         node {
           name
+          avatar
           roles
           joined
           company {

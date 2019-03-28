@@ -1,4 +1,5 @@
 - name: Marco Walz
+  avatar: https://github.com/marc0olo.png
   roles:
     - Founder
     - Developer (SDK, Backend, Smart Contract)
@@ -12,6 +13,7 @@
     linkedin: https://www.linkedin.com/in/marco-walz-776844141/
 
 - name: Michel Meier
+  avatar: https://github.com/mitch-lbw.png
   roles:
     - Co-Founder
     - Developer (SDK, Backend)
@@ -39,6 +41,7 @@
     linkedin:
 
 - name: Jan-Patrick Weller
+  avatar: https://github.com/the-icarus.png
   roles:
     - UI/UX Expert
     - Developer (Frontend)

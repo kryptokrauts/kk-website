@@ -3,7 +3,7 @@
   description: A community developed Java SDK to interact with the Æternity blockchain
   work: fully developed and maintained by kryptokrauts.com
   links:
-    website:
+    website: https://github.com/kryptokrauts/aepp-sdk-java
     github: https://github.com/kryptokrauts/aepp-sdk-java
     docs:
     twitter: https://twitter.com/kryptokrauts

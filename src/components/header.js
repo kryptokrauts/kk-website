@@ -34,7 +34,12 @@ export default class Header extends Component {
     return (
       <div className={headerStyles.header + ' ' + (this.state.scrolled ? headerStyles.scrolled : '')}>
         <CenteredLogo />
-        <div className={headerStyles.sitename}>{this.props.title}</div>
+        <a href="/" className={headerStyles.sitename} >{this.props.title}</a>
+        <div className={headerStyles.menu}>
+          {this.props.menu.map((item, i) => (
+            <a href={item.path} key={i}>{item.label}</a>
+          ))}
+        </div>
         <Social className={headerStyles.socialinfo} providers={this.props.social} />
       </div>
     )

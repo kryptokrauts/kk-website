@@ -6,7 +6,7 @@ export default (props) => (
   <div className={timeline.container}>
     <TimelineItem isFirst={true}></TimelineItem>
     {props.data.map((item, i) => (
-      <TimelineItem data={item} key={i}></TimelineItem>
+      <TimelineItem data={item.node} key={i}></TimelineItem>
     ))}
   </div>
 )

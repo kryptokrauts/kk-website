@@ -1,0 +1,19 @@
+.post {
+  max-width: 700px;
+}
+
+.date {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.author {
+  font-size: 12px;
+  font-size: italic;
+}
+
+.content pre {
+  padding: 10px;
+  background-color: rgba(0,0,0,0.04);
+  border: 1px solid rgba(0,0,0,0.3);
+}

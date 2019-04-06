@@ -1,5 +1,5 @@
 import React from "react";
-import { dateFormatter, openURL } from "../utils/format.util";
+import { dateFormatter, openURL } from "../utils/common.util";
 import timelineItem from "./timelineItem.module.css";
 
 

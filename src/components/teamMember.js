@@ -1,5 +1,5 @@
 import React from "react";
-import { dateFormatter } from "../utils/format.util";
+import { dateFormatter } from "../utils/common.util";
 import Social from "./social";
 import teamMemberStyle from "./teamMember.module.css";
 

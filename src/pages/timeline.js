@@ -3,17 +3,9 @@ import React from "react";
 import Header from "../components/header";
 import Timeline from "../components/timeline";
 
-const menuItems = [{
-  label: 'Timeline',
-  path: '/timeline'
-}];
-
 export default ({ data }) => (
   <div>
-    <Header
-      title={data.site.siteMetadata.title}
-      social={data.site.siteMetadata.links}
-      menu={menuItems} />
+    <Header />
     <div className="content">
       <h2>Timeline</h2>
       <Timeline data={data.allMarkdownRemark.edges}></Timeline>
@@ -23,17 +15,11 @@ export default ({ data }) => (
 
 export const query = graphql`
   query {
-    site {
-      siteMetadata {
-        title,
-        founded,
-        links {
-          github,
-          twitter
-        }
-      }
-    }
-    allMarkdownRemark {
+    allMarkdownRemark(
+      filter: {frontmatter: {path: {regex: "/^\/timeline" }}}
+      sort: { order: DESC, fields: [frontmatter___date] }
+      limit: 1000
+    ) {
       edges {
         node {
           frontmatter {

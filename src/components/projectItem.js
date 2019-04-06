@@ -1,5 +1,5 @@
 import React from "react";
-import { openURL } from '../utils/format.util';
+import { openURL } from '../utils/common.util';
 import projectItemStyle from "./projectItem.module.css";
 import Social from "./social";
 import TagList from "./tagList";

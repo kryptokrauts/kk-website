@@ -28,6 +28,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:not(.inactive):hover {
     color: #66bb6a;
 }

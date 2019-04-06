@@ -1,0 +1,12 @@
+- prefix: kraut
+  label: TIMELINE
+  path: /timeline
+- prefix: kraut
+  label: LOG
+  path: 
+- prefix: kraut
+  label: GLOSSAR
+  path: 
+- prefix: kraut
+  label: ACADEMY
+  path: 

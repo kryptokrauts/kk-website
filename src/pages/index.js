@@ -4,17 +4,9 @@ import Header from "../components/header";
 import Projects from "../components/projects";
 import Team from "../components/team";
 
-const menuItems = [{
-  label: 'Timeline',
-  path: '/timeline'
-}];
-
 export default ({ data }) => (
   <div>
-    <Header
-      title={data.site.siteMetadata.title}
-      social={data.site.siteMetadata.links}
-      menu={menuItems} />
+    <Header />
     <div className="content">
       <h2>Team</h2>
       <Team members={data.allTeamYaml.edges} />
@@ -26,16 +18,6 @@ export default ({ data }) => (
 
 export const query = graphql`
   query {
-    site {
-      siteMetadata {
-        title,
-        founded,
-        links {
-          github,
-          twitter
-        }
-      }
-    }
     allTeamYaml {
       edges {
         node {

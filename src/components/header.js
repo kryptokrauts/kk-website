@@ -1,3 +1,4 @@
+import { graphql, StaticQuery } from "gatsby";
 import React, { Component } from "react";
 import headerStyles from "./header.module.css";
 import CenteredLogo from "./logo";
@@ -8,7 +9,6 @@ export default class Header extends Component {
   state = {
     scrolled: false
   };
-
 
   scrollHandler(evt) {
     if (evt.currentTarget.pageYOffset > 0) {
@@ -30,18 +30,56 @@ export default class Header extends Component {
     window.addEventListener('scroll', this.scrollHandler.bind(this));
   }
 
-  render() {
+  headerRenderer(data) {
+    const metaInfo = data.site.siteMetadata;
+    const menu = data.allMenuYaml.edges.map(item => item.node);
     return (
       <div className={headerStyles.header + ' ' + (this.state.scrolled ? headerStyles.scrolled : '')}>
         <CenteredLogo />
-        <a href="/" className={headerStyles.sitename} >{this.props.title}</a>
         <div className={headerStyles.menu}>
-          {this.props.menu.map((item, i) => (
-            <a href={item.path} key={i}>{item.label}</a>
-          ))}
+          {menu.map((item, i) => (
+            <div key={i} className={headerStyles.menuItemContainer}>
+              {!item.path ? (
+                <div className={headerStyles.menuInactiveBadge}>coming soon</div>
+              ) : ""}
+              <a href={item.path} className={!item.path ? "inactive" : ""}>{item.prefix}<b>{item.label}</b></a>
+            </div>
+          ))
+          }
         </div>
-        <Social className={headerStyles.socialinfo} providers={this.props.social} />
+        <Social className={headerStyles.socialinfo} providers={metaInfo.links} />
       </div>
+    )
+  }
+
+  render() {
+    return (
+      <StaticQuery
+        query={graphql`
+        query {
+          site {
+            siteMetadata {
+              title,
+              founded,
+              links {
+                github,
+                twitter
+              }
+            }
+          }
+          allMenuYaml {
+            edges {
+              node {
+                prefix
+                label
+                path
+              }
+            }
+          }
+        }
+        `}
+        render={this.headerRenderer.bind(this)}
+      ></StaticQuery>
     )
   }
 }

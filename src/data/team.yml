@@ -28,6 +28,7 @@
     linkedin:
 
 - name: Andreas Müller
+  avatar: https://github.com/XoXs.png
   roles:
     - Designer
     - Developer (Frontend)
@@ -36,9 +37,9 @@
     name: targens GmbH
     website: https://www.targens.de/
   profiles:
-    github:
-    twitter:
-    linkedin:
+    github: https://github.com/XoXs
+    twitter: https://twitter.com/Andreas_ltb
+    linkedin: https://www.linkedin.com/in/andreas-m%C3%BCller-597b74183/
 
 - name: Jan-Patrick Weller
   avatar: https://github.com/the-icarus.png

@@ -72,7 +72,6 @@ export default class Header extends Component {
               node {
                 prefix
                 label
-                path
               }
             }
           }

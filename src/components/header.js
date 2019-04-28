@@ -1,5 +1,6 @@
 import { graphql, StaticQuery } from "gatsby";
 import React, { Component } from "react";
+import { Helmet } from "react-helmet";
 import headerStyles from "./header.module.css";
 import CenteredLogo from "./logo";
 import Social from "./social";
@@ -35,6 +36,10 @@ export default class Header extends Component {
     const menu = data.allMenuYaml.edges.map(item => item.node);
     return (
       <div className={headerStyles.header + ' ' + (this.state.scrolled ? headerStyles.scrolled : '')}>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>kryptokrauts.com</title>
+        </Helmet>
         <CenteredLogo />
         <div className={headerStyles.menu}>
           {menu.map((item, i) => (

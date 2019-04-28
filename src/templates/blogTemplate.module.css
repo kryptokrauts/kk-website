@@ -9,7 +9,29 @@
 
 .author {
   font-size: 12px;
-  font-size: italic;
+  font-style: italic;
+}
+
+.image-container {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+.image {
+  width: 100%;
+  height: calc(100% - 20px);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-source {
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  text-align: right;
 }
 
 .content pre {

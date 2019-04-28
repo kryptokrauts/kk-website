@@ -19,3 +19,5 @@ script:
   - "npm run test"
   - "npm run deploy"
   - cp CNAME public/
+  - mkdir public/.well-known
+  - cp brave-rewards-verification.txt public/.well-known/

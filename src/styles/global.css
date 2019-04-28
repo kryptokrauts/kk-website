@@ -29,7 +29,7 @@ html, body {
 
 a {
     color: #000;
-    text-decoration: none;
+    text-decoration: underlinen;
 }
 
 a:not(.inactive):hover {

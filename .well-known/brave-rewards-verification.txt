@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: kryptokrauts.com
-Token: bad7d09d45a7f9c6bb812d224a42cb5aaa180b42f63272c26311869c0c32dfd5

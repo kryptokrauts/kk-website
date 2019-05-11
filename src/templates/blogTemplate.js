@@ -13,7 +13,7 @@ export default function Template({
       <Header />
       <div className="content">
         <div className={blogTemplateModule.post}>
-          <h1>{frontmatter.date ? dateFormatter(frontmatter.date) + ": " : ""}{frontmatter.title}</h1>
+          <h1 className={blogTemplateModule.title}>{frontmatter.date ? dateFormatter(frontmatter.date) + ": " : ""}{frontmatter.title}</h1>
           {frontmatter.image ? (
             <div className={blogTemplateModule.imageContainer}>
               <div className={blogTemplateModule.image}>
@@ -43,8 +43,6 @@ export const pageQuery = graphql`
         date
         title
         author
-        image
-        imageSource
       }
     }
   }

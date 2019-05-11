@@ -17,9 +17,10 @@ export default (props) => {
     return (
       <div className={timelineItem.container + ' ' + props.className}
         onClick={() => openURL(itemData.path)}>
-        {itemData.image ? (
+        {itemData.thumbnail ? (
           <div className={timelineItem.thumbnailContainer}>
-            <img className={timelineItem.thumbnail} src={itemData.image} />
+            <img className={timelineItem.thumbnail} src={itemData.thumbnail} />
+            <div className={timelineItem.thumbnailSource}>Image: {itemData.thumbnailSource}</div>
           </div>
         ) : ""}
         <div className={timelineItem.icon}><i className={itemData.icon || "fas fa-bell"}></i></div>

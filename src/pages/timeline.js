@@ -31,7 +31,8 @@ export const query = graphql`
             date
             path
             icon
-            image
+            thumbnail
+            thumbnailSource
           }
         }
       }

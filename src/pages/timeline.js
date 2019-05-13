@@ -9,7 +9,7 @@ export default ({ data }) => (
     <div className="content">
       <h2>
         Timeline
-        <a href="/log/howto-contribute" className="timeline-contrib-info" title="How To Contribute?">
+        <a href="/log/how-to-contribute" className="timeline-contrib-info" title="How to contribute?">
           <i className="fas fa-info-circle"></i>
         </a>
       </h2>

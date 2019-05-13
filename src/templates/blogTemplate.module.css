@@ -16,12 +16,18 @@
   font-style: italic;
 }
 
-.post .img {
-  width: 100%;
+.post img {
+  max-width: 100%;
 }
 
 .content pre {
   padding: 10px;
   background-color: rgba(0,0,0,0.04);
   border: 1px solid rgba(0,0,0,0.3);
+}
+
+img + em {
+  display: block;
+  font-size: 12px;
+  font-style: italic;
 }

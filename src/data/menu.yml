@@ -1,6 +1,6 @@
 - prefix: kraut
   label: TIMELINE
-  path: 
+  path: /timeline
 - prefix: kraut
   label: LOG
   path: 

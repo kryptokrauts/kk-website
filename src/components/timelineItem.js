@@ -17,6 +17,12 @@ export default (props) => {
     return (
       <div className={timelineItem.container + ' ' + props.className}
         onClick={() => openURL(itemData.path)}>
+        {itemData.thumbnail ? (
+          <div className={timelineItem.thumbnailContainer}>
+            <img className={timelineItem.thumbnail} src={itemData.thumbnail} alt="" />
+            <div className={timelineItem.thumbnailSource}>Image: {itemData.thumbnailSource}</div>
+          </div>
+        ) : ""}
         <div className={timelineItem.icon}><i className={itemData.icon || "fas fa-bell"}></i></div>
         <div className={timelineItem.date}>{dateFormatter(itemData.date)}</div>
         <div className={timelineItem.title}>{itemData.title}</div>

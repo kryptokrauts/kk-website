@@ -7,7 +7,12 @@ export default ({ data }) => (
   <div>
     <Header />
     <div className="content">
-      <h2>Timeline</h2>
+      <h2>
+        Timeline
+        <a href="/log/how-to-contribute" className="timeline-contrib-info" title="How to contribute?">
+          <i className="fas fa-info-circle"></i>
+        </a>
+      </h2>
       <Timeline data={data.allMarkdownRemark.edges}></Timeline>
     </div>
   </div>
@@ -26,6 +31,8 @@ export const query = graphql`
             date
             path
             icon
+            thumbnail
+            thumbnailSource
           }
         }
       }

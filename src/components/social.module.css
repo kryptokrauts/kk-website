@@ -9,8 +9,8 @@
   line-height: 100%;
 }
 
-.icon:hover {
-  color: #43a047;
+.icon:not(.inactive):hover {
+  color: #999;
 }
 
 .icon i {

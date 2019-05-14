@@ -1,3 +1,4 @@
+import { graphql } from "gatsby";
 import React from "react";
 import Header from "../components/header";
 import { dateFormatter } from "../utils/common.util";
@@ -13,9 +14,9 @@ export default function Template({
       <Header />
       <div className="content">
         <div className={blogTemplateModule.post}>
-          <h1>{frontmatter.title}</h1>
-          <div className={blogTemplateModule.date}>{dateFormatter(frontmatter.date)}</div>
-          <div className={blogTemplateModule.author}>{frontmatter.author}</div>
+          <h1 className={blogTemplateModule.title}>{frontmatter.date ? dateFormatter(frontmatter.date) + ": " : ""}{frontmatter.title}</h1>
+          <div className={blogTemplateModule.date}>published: {dateFormatter(frontmatter.publishedOn)}</div>
+          <div className={blogTemplateModule.author}>Author: {frontmatter.author}</div>
           <div
             className={blogTemplateModule.content}
             dangerouslySetInnerHTML={{ __html: html }}
@@ -31,6 +32,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: {path: {eq: $path } }) {
       html
       frontmatter {
+        publishedOn
         date
         title
         author

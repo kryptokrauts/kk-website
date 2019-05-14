@@ -1,3 +1,4 @@
+import { graphql } from "gatsby";
 import React from "react";
 import Header from "../components/header";
 import { dateFormatter } from "../utils/common.util";
@@ -14,14 +15,6 @@ export default function Template({
       <div className="content">
         <div className={blogTemplateModule.post}>
           <h1 className={blogTemplateModule.title}>{frontmatter.date ? dateFormatter(frontmatter.date) + ": " : ""}{frontmatter.title}</h1>
-          {frontmatter.image ? (
-            <div className={blogTemplateModule.imageContainer}>
-              <div className={blogTemplateModule.image}>
-                <img src={frontmatter.image} />
-              </div>
-              <div className={blogTemplateModule.imageSource}>Source: {frontmatter.imageSource || frontmatter.image}</div>
-            </div>
-          ) : ""}
           <div className={blogTemplateModule.date}>published: {dateFormatter(frontmatter.publishedOn)}</div>
           <div className={blogTemplateModule.author}>Author: {frontmatter.author}</div>
           <div

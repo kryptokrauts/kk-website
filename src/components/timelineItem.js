@@ -19,7 +19,7 @@ export default (props) => {
         onClick={() => openURL(itemData.path)}>
         {itemData.thumbnail ? (
           <div className={timelineItem.thumbnailContainer}>
-            <img className={timelineItem.thumbnail} src={itemData.thumbnail} />
+            <img className={timelineItem.thumbnail} src={itemData.thumbnail} alt="" />
             <div className={timelineItem.thumbnailSource}>Image: {itemData.thumbnailSource}</div>
           </div>
         ) : ""}

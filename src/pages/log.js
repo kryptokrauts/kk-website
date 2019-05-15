@@ -22,11 +22,12 @@ export const query = graphql`
         node {
           frontmatter {
             title
-            date
+            publishedOn
             path
-            icon
+            introText
             thumbnail
             thumbnailSource
+            tags
           }
         }
       }

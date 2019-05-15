@@ -1,6 +1,11 @@
-@media screen and (max-width: 800px) {
-    content {
-        width: 100%;
-        padding: 0;
-    }
+.sectionTitle {
+    text-align: center;
+    margin-bottom: 57px;
+}
+
+.title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 18px;
+    font-weight: 700;
 }

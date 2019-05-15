@@ -3,9 +3,10 @@ publishedOn: "2019-03-31"
 title: "How to contribute to the timeline"
 path: "/log/how-to-contribute"
 author: Jan-Patrick Weller & Marco Walz
-icon: ""
+introText: "You want to know to to contribute to our crypto-timeline? In this article you get all the information you need!"
 thumbnail: "https://cdn.pixabay.com/photo/2016/11/29/07/10/business-1868015_960_720.jpg"
 thumbnailSource: "Pixabay"
+tags: ["Timeline", "How-To"]
 ---
 We encourage everyone to help us maintaining the crypto-timeline. To be able to contribute content you need to have some basic [git-skills](https://guides.github.com/introduction/git-handbook/) and know how content can be written with [markdown](https://guides.github.com/features/mastering-markdown/).
 

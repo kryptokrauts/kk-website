@@ -14,7 +14,7 @@ export default function Template({
       <Header />
       <div className="content">
         <div className={blogTemplateModule.post}>
-          <h1 className={blogTemplateModule.title}>{frontmatter.date ? dateFormatter(frontmatter.date) + ": " : ""}{frontmatter.title}</h1>
+          <h1 className={blogTemplateModule.title}>{frontmatter.date ? dateFormatter(frontmatter.date) + " - " : ""}{frontmatter.title}</h1>
           <div className={blogTemplateModule.date}>published: {dateFormatter(frontmatter.publishedOn)}</div>
           <div className={blogTemplateModule.author}>Author: {frontmatter.author}</div>
           <div

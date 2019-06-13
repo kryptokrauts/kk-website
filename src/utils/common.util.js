@@ -1,8 +1,13 @@
-export function dateFormatter(value) {
-  if (!(value instanceof Date)) {
-    value = new Date(value);
+export function dateFormatter(date) {
+  if (!(date instanceof Date)) {
+    date = new Date(date);
   }
-  return value.toLocaleDateString();
+  function pad(n) {
+    return n<10 ? '0' + n: n
+  }
+  return pad(date.getUTCDate() + "."
+  + pad(date.getUTCMonth()+1) + "."
+  + date.getUTCFullYear());
 }
 
 export function openURL(url) {

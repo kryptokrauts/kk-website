@@ -6,7 +6,7 @@
   path: /timeline
 - prefix: kraut
   label: LEXICON
-  path: 
+  path: /lexicon
 - prefix: kraut
   label: ACADEMY
   path: 

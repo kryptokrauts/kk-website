@@ -15,6 +15,9 @@ The so-called *Altcoins* (short for alternative coin) are alternative cryptocurr
 
 Meanwhile there are also bots that do this automatically for you. However, no profit is guaranteed with this trading method, because certain costs must be considered.
 
+## ASIC
+An *Application Specific Integrated Circuit (ASIC)* is a silicon chip specifically designed to do a single task. In the case of Bitcoin, they are designed to process SHA-256 hashing problems to mine new bitcoins. ASICs are considered to be much more efficient than conventional hardware (CPUs, GPUs). Using a regular computer for Bitcoin mining is seen as unprofitable and only results in higher electricity bill.
+
 ## ATH
 Acronym for *"All Time High"*. Describes the highest price at which a token/coin has ever been traded.
 
@@ -29,6 +32,9 @@ So-called Hash Time Locked Contracts (HTLC) ensure a secure and fair exchange. I
 A *bagholder* is an investor who holds a cryptocurrency whose price falls until the coin is worth almost nothing. Those affected hold the cryptocurrency in the hope that the coin will rise again in order not to make a loss or at least to reduce the amount of the loss. However, this is rarely the case, because in most cases the bagholders lose a large part of their investment.
 
 If you don't do sufficient research before buying a cryptocurrency, and instead invest in so-called *shitcoins*, then the risk of becoming a bagholder increases.
+
+## Blockexplorer
+A *blockexplorer* typically is an online tool for exploring the blockchain of a particular cryptocurrency. It provides an overview over all the transactions happening on the blockchain. Blockexplorers can serve as blockchain analysis and provide information such as total network hash rate, coin supply, transaction growth and other metrics.
 
 ## Block height
 A blockchain consists of a series of blocks. The *block height* indicates which block you are talking about or the current length of the blockchain.
@@ -125,7 +131,7 @@ E.g. Jamie Dimon of JPMorgan spread FUD by saying Bitcoin was fraud.
 # G
 
 ## Genesis Block
-The *Genesis Block* is the first block in a blockchain. Bitcoin’s Genesis Block was the first-ever block of blockchain technology.
+A *genesis block* is the first block of a blockchain. Modern versions of Bitcoin number it as block 0, though very early versions counted it as block 1. The genesis block is almost always hardcoded into the software of the applications that utilize its block chain. It is a special case in that it does not reference a previous block, and for Bitcoin and almost all of its derivatives, it produces an unspendable subsidy.
 
 # H
 
@@ -175,8 +181,15 @@ No amount of confirmations can prevent this attack; however, waiting for confirm
 ## Mempool
 In blockchains, a mempool is a collection of unconfirmed transactions held in the memory of network nodes.
 
+## Merkle tree (hash tree)
+In cryptography and computer science, a *hash tree* or *Merkle tree* is a tree in which every leaf node is labelled with the hash of a data block and every non-leaf node is labelled with the cryptographic hash of the labels of its child nodes. Hash trees allow efficient and secure verification of the contents of large data structures. Hash trees are a generalization of hash lists and hash chains.
+
+Hash trees can be used to verify any kind of data stored, handled and transferred in and between computers. They can help ensure that data blocks received from other peers in a peer-to-peer network are received undamaged and unaltered, and even to check that the other peers do not lie and send fake blocks.
+
+The concept of hash trees is named after Ralph Merkle who patented it in 1979.
+
 ## Mining
-Mining is the process of completing a new block of transactions and adding it to a blockchain. Miners are nodes in blockchain networks that select transactions from the mempool, validate that the transactions follow all protocol rules and include them in the created block.
+*Mining* is the process of completing a new block of transactions and adding it to a blockchain. Miners are nodes in blockchain networks that select transactions from the mempool, validate that the transactions follow all protocol rules and include them in the created block.
 
 Mining is typically a decentralized process. A successful valid block formation is a random event, the probability of which is proportional to the computing power of the miner's hardware. The reason why miners are motivated to commit their resources to mining is that they are rewarded by newly created cryptocurrency in each block they successfully create together with transaction fees from each transaction they add to valid block. Mining thus also constitutes the default way of decentralized cryptocurrency initial distribution. However, mining is not primarily process for creation of new cryptocurrency but serves as a mechanism by which is the security of the network decentralized.
 
@@ -194,9 +207,39 @@ Multisig is short for multisignature. It is a security mechanism that requires m
 
 # N
 
+## Nonce (cryptography)
+In cryptography, a *nonce* is an arbitrary number that can only be used once. It is similar in spirit to a nonce word, hence the name. It is often a random or pseudo-random number issued in an authentication protocol to ensure that old communications cannot be reused in replay attacks. They can also be useful as initialization vectors and in cryptographic hash functions.
+
+Nonces are used in proof-of-work systems to vary the input to a cryptographic hash function so as to obtain a hash for a certain input that fulfills certain arbitrary conditions. In doing so, it becomes far more difficult to create a “desirable” hash than to verify it, shifting the burden of work onto one side of a transaction or system. For example, proof of work, using hash functions, was considered as a means to combat email spam by forcing email senders to find a hash value for the email (which included a timestamp to prevent pre-computation of useful hashes for later use) that had an arbitrary number of leading zeroes, by hashing the same input with a large number of nonce values until a “desirable” hash was obtained.
+
 # O
 
+## Oracle
+An *oracle*, in the context of blockchains and smart contracts, is an agent that finds and verifies real-world occurrences and submits this information to a blockchain to be used by smart contracts.
+
+Smart contracts contain value and only unlock that value if certain pre-defined conditions are met. When a particular value is reached, the smart contract changes its state and executes the programmatically predefined algorithms, automatically triggering an event on the blockchain. The primary task of oracles is to provide these values to the smart contract in a secure and trusted manner.
+
+Blockchains cannot access data outside their network. An oracle is a data feed – provided by third party service – designed for use in smart contracts on the blockchain. Oracles provide external data and trigger smart contract executions when pre-defined conditions meet. Such condition could be any data like weather temperature, successful payment, price fluctuations, etc.
+
+Oracles are part of multi-signature contracts where for example the original trustees sign a contract for future release of funds only if certain conditions are met. Before any funds get released an oracle has to sign the smart contract as well.
+
 # P
+
+## Proof of Stake (PoS)
+*Proof of stake (PoS)* is a type of algorithm by which a cryptocurrency blockchain network aims to achieve distributed consensus. In PoS-based cryptocurrencies, the creator of the next block is chosen via various combinations of random selection and wealth or age (i.e., the stake). In contrast, the algorithm of proof-of-work-based cryptocurrencies such as bitcoin uses mining; that is, the solving of computationally intensive puzzles to validate transactions and create new blocks.
+
+Proof-of-stake currencies can be more energy efficient than currencies based on proof-of-work algorithms.
+
+## Proof of Work (PoW)
+A *proof of work* is a piece of data which is difficult (costly, time-consuming) to produce but easy for others to verify and which satisfies certain requirements. Producing a proof of work can be a random process with low probability so that a lot of trial and error is required on average before a valid proof of work is generated. Bitcoin uses the Hashcash proof of work system.
+
+One application of this idea is using Hashcash as a method to preventing email spam, requiring a proof of work on the email's contents (including the To address), on every email. Legitimate emails will be able to do the work to generate the proof easily (not much work is required for a single email), but mass spam emailers will have difficulty generating the required proofs (which would require huge computational resources).
+
+Hashcash proofs of work are used in Bitcoin for block generation. In order for a block to be accepted by network participants, miners must complete a proof of work which covers all of the data in the block. The difficulty of this work is adjusted so as to limit the rate at which new blocks can be generated by the network to one every 10 minutes. Due to the very low probability of successful generation, this makes it unpredictable which worker computer in the network will be able to generate the next block.
+
+For a block to be valid it must hash to a value less than the current target; this means that each block indicates that work has been done generating it. Each block contains the hash of the preceding block, thus each block has a chain of blocks that together contain a large amount of work. Changing a block (which can only be done by making a new block containing the same predecessor) requires regenerating all successors and redoing the work they contain. This protects the block chain from tampering.
+
+The most widely used proof-of-work scheme is based on SHA-256 and was introduced as a part of Bitcoin. Some other hashing algorithms that are used for proof-of-work include Scrypt, Blake-256, CryptoNight, HEFTY1, Quark, SHA-3, scrypt-jane, scrypt-n, and combinations thereof.
 
 ## Public-key cryptography
 *Public-key cryptography (or asymmetric cryptography)*, is a cryptographic system that uses pairs of keys: public keys (which may be disseminated widely) and private keys (which are known only to the owner). The message sender uses the recipient's public key to encrypt a message. To decrypt the sender's message, only the recipient's private key may be used. In cryptocurrencies, this system is widely used as one of the means of securing transactions.
@@ -215,8 +258,27 @@ Multisig is short for multisignature. It is a security mechanism that requires m
 
 *SegWit* was the last protocol change needed to make the *Lightning network* safe to deploy on the Bitcoin network.
 
+## Smart Contract
+A *smart contract* is a computer protocol intended to digitally facilitate, verify, or enforce the negotiation or performance of a contract. Smart contracts allow the performance of credible transactions without third parties. These transactions are trackable and irreversible.
+
+The aim of smart contracts is to provide security that is superior to traditional contract law and to reduce other transaction costs associated with contracting. Various cryptocurrencies have implemented types of smart contracts.
+
+With the present implementations, based on blockchains, “smart contract” is mostly used more specifically in the sense of general purpose computation that takes place on a blockchain or distributed ledger. In this interpretation, used for example by the Ethereum Foundation or IBM, a smart contract is not necessarily related to the classical concept of a contract, but can be any kind of computer program.
+
+A major limitation of smart contracts is that they are unable to communicate with resources external to the blockchain they are secured on. In practice, this means that smart contracts are not able to trigger based on real-life events. This is known as “the oracle problem”, after test oracles. Oracles provide external data and trigger smart contract executions when pre-defined conditions are met, providing connectivity to the outside world.
+
 ## Soft fork
 A *soft fork* is a change to the cryptocurrency protocol wherein only previously valid blocks and transactions are made invalid. Since old nodes will recognize the new blocks as valid, unlike a hard fork, a soft fork can still work with older versions of the protocol.
+
+## Solidity
+*Solidity* is a contract-oriented, high-level language for implementing smart contracts. It was influenced by C++, Python and JavaScript and is designed to target the Ethereum Virtual Machine (EVM).
+
+## State Channel
+*State channels* enable highly scalable, trustless transactions of value and purely functional, easily verifiable Turing-complete smart contracts.
+
+State channels offer a way to scale “off-chain” by only storing channel opening and closing information on the blockchain. Two parties deposit tokens into a channel when they open it and the sum of two deposits is the only amount of tokens that can be used within that channel. The state of the channel is the current balance of each party, co-signed by both parties. There can be multiple exchanges of state between the parties but only the last undisputed state becomes the final closing state of the channel. Each message in the channel carries an ever-increasing counter and the message with the highest counter value is considered to be the last state.
+
+State channels come from the realization that, for most purposes, only the actors involved in a smart contract are required to know about it. Two or more actors lock a state and a contract on the blockchain and then perform signed transactions between themselves, off of the public network (or off-chain). The final state is then written to the blockchain. If the end result is disputed, the series of signed off-chain transactions can be uploaded to the blockchain for verification or dispute resolution.
 
 # T
 

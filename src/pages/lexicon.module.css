@@ -1,0 +1,19 @@
+.lexicon-container {
+  max-width: 700px;
+}
+
+.lexicon-container h1, 
+.lexicon-container h2 {
+  text-align: center;
+}
+
+.lexicon-container h1 {
+  font-size: 50px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.lexicon-container h2 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}

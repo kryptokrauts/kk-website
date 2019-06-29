@@ -8,6 +8,7 @@ exports.createPages = ({ actions, graphql }) => {
   return graphql(`
     {
       allMarkdownRemark(
+        filter: {frontmatter: {path: {regex: "/(^\/timeline|^\/log)/" }}}
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
       ) {

@@ -1,6 +1,6 @@
 - project: aepp-sdk-java
   year: 2019
-  description: A community developed Java SDK to interact with the Æternity blockchain
+  description: A community developed Java SDK to interact with the æternity blockchain
   work: fully developed and maintained by kryptokrauts.com
   links:
     website: https://github.com/kryptokrauts/aepp-sdk-java

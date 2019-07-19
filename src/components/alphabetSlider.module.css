@@ -26,3 +26,14 @@
   font-weight: bold;
   font-size: 20px;
 }
+
+@media only screen and (max-height: 650px) {
+  .char {
+    line-height: 15px;
+  }
+
+  .char:hover {
+    font-size: 15px;
+    font-weight: bold;
+  }
+}

@@ -5,7 +5,7 @@ import Projects from "../components/projects";
 import Team from "../components/team";
 
 export default ({ data }) => (
-  <div>
+  <div className="main-container">
     <Header />
     <div className="content">
       <h2>Team</h2>

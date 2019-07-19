@@ -8,7 +8,8 @@ import Social from "./social";
 export default class Header extends Component {
 
   state = {
-    scrolled: false
+    scrolled: false,
+    mobileMenuOpen: false
   };
 
   scrollHandler(evt) {
@@ -19,6 +20,14 @@ export default class Header extends Component {
     } else {
       this.setState({
         scrolled: false
+      });
+    }
+  }
+
+  toggleMobileMenu() {
+    return () => {
+      this.setState({
+        mobileMenuOpen: !this.state.mobileMenuOpen
       });
     }
   }
@@ -53,7 +62,21 @@ export default class Header extends Component {
           }
         </div>
         <Social className={headerStyles.socialinfo} providers={metaInfo.links} />
-      </div>
+        <div className={headerStyles.menuMobileLauncher} onClick={this.toggleMobileMenu()}>
+          <i className="fas fa-bars"></i>
+        </div>
+        <div className={headerStyles.menuMobile + ' ' + (this.state.mobileMenuOpen ? headerStyles.menuMobileActive : '')}>
+          {menu.map((item, i) => (
+            <div key={i} className={headerStyles.menuItemContainer}>
+              {!item.path ? (
+                <div className={headerStyles.menuInactiveBadge}>coming soon</div>
+              ) : ""}
+              <a href={item.path} className={!item.path ? "inactive" : ""}>{item.prefix}<b>{item.label}</b></a>
+            </div>
+          ))
+          }
+        </div>
+      </div >
     )
   }
 

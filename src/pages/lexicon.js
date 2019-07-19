@@ -12,8 +12,8 @@ export default function Template({
   return (
     <div>
       <Header />
-      <div className="content">
-        <AlphabetSlider />
+      <AlphabetSlider />
+      <div className="content has-slider">
         <div
           className={LexiconStyle.lexiconContainer}
           dangerouslySetInnerHTML={{ __html: html }}

@@ -95,11 +95,30 @@
   left: -70px;
 }
 
-
 .date {
   font-size: 15px;
 }
 
 .title {
   font-size: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .container:nth-child(odd),
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 5px;
+  }
+
+  .container:nth-child(odd) .line,
+  .container .line {
+    left: -31px;
+    height: calc(100% + 5px);
+  }
+  
+  .container:nth-child(odd) .icon,
+  .container .icon {
+    left: -50px;
+  }
 }

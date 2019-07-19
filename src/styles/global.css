@@ -15,12 +15,19 @@ html, body {
     flex: 1;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .content {
     margin-top: 70px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .timeline-contrib-info {
@@ -42,4 +49,10 @@ pre {
     white-space: -pre-wrap;      /* Opera 4-6 */
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+@media only screen and (max-width: 770px) {
+    .content.has-slider {
+        padding: 10px 40px 10px 10px;
+    }
 }

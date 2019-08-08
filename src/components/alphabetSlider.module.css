@@ -13,6 +13,11 @@
   box-sizing: border-box;
 }
 
+.container a {
+  color: #000;
+  text-decoration: none;
+}
+
 .char {
   display: flex;
   align-items: flex-end;
@@ -22,9 +27,10 @@
   line-height: 20px;
 }
 
-.char:hover {
+.char:not(.inactive):hover {
   font-weight: bold;
   font-size: 20px;
+  color: #000;
 }
 
 @media only screen and (max-height: 650px) {

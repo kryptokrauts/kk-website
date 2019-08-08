@@ -21,6 +21,12 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: 'gatsby-remark-autolink-headers',
+            options: {
+              offsetY: 70
+            }
+          },
+          {
             resolve: 'gatsby-remark-graph',
             options: {
               // this is the language in your code-block that triggers mermaid parsing

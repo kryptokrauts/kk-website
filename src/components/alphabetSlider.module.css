@@ -33,7 +33,7 @@
   color: #000;
 }
 
-@media only screen and (max-height: 650px) {
+@media only screen and (max-height: 650px) and (max-width: 770px) {
   .char {
     line-height: 15px;
   }
@@ -41,5 +41,19 @@
   .char:hover {
     font-size: 15px;
     font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 770px) {
+  .container {
+    position: relative;
+    margin-top: 70px;
+    right: 0;
+    flex-direction: row;
+  }
+
+  .char {
+    width: 10px;
+    font-size: 15px;
   }
 }

@@ -22,9 +22,6 @@ module.exports = {
         plugins: [
           {
             resolve: 'gatsby-remark-autolink-headers',
-            options: {
-              offsetY: 70
-            }
           },
           {
             resolve: 'gatsby-remark-graph',

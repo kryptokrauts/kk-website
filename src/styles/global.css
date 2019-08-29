@@ -29,6 +29,10 @@ html, body {
     width: 100%;
 }
 
+.content.has-slider {
+    margin-top: 90px;
+}
+
 .timeline-contrib-info {
     margin-left: 10px;
 }
@@ -53,5 +57,6 @@ pre {
 @media only screen and (max-width: 770px) {
     .content.has-slider {
         padding: 10px 40px 10px 10px;
+        margin-top: 70px;
     }
 }

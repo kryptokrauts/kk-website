@@ -33,7 +33,7 @@
   color: #000;
 }
 
-@media only screen and (max-height: 650px) {
+@media only screen and (max-height: 650px) and (max-width: 770px) {
   .char {
     line-height: 15px;
   }
@@ -41,5 +41,29 @@
   .char:hover {
     font-size: 15px;
     font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 770px) {
+  .container {
+    position: fixed;
+    flex-direction: row;
+    top: 65px;
+    right: 0;
+    height: 35px;
+    width: 100%;
+    padding: 0;
+    z-index: 101;
+    background-color: #fff;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+
+  .scrolled {
+    box-shadow: 0 5px 5px rgba(0,0,0,0.25), 0 2px 2px rgba(0,0,0,0.22);
+  }
+
+  .char {
+    width: 10px;
+    font-size: 15px;
   }
 }

@@ -14,14 +14,15 @@
   border-radius: 5px;
   position: absolute;
   left: 0;
-  margin-top: 25px;
+  bottom: 10px;
 }
 
 .lexicon-container h1, 
 .lexicon-container h2 {
-  text-align: center;
   display: flex;
-  align-items: center;
+  position: relative;
+  width: 100%;
+  justify-content: center;
 }
 
 .lexicon-container h1 a, 

@@ -1,50 +1,23 @@
 import { graphql, StaticQuery } from "gatsby";
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet";
+import { useScroll } from "../common/useScroll";
 import headerStyles from "./header.module.css";
 import CenteredLogo from "./logo";
 import Social from "./social";
 
-export default class Header extends Component {
+export default () => {
 
-  state = {
-    scrolled: false,
-    mobileMenuOpen: false
-  };
+  const scrolled = useScroll();
 
-  scrollHandler(evt) {
-    if (evt.currentTarget.pageYOffset > 0) {
-      this.setState({
-        scrolled: true
-      });
-    } else {
-      this.setState({
-        scrolled: false
-      });
-    }
-  }
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
-  toggleMobileMenu() {
-    return () => {
-      this.setState({
-        mobileMenuOpen: !this.state.mobileMenuOpen
-      });
-    }
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.scrollHandler.bind(this));
-  }
-
-  componentDidMount() {
-    window.addEventListener('scroll', this.scrollHandler.bind(this));
-  }
-
-  headerRenderer(data) {
+  const headerRenderer = (data) => {
     const metaInfo = data.site.siteMetadata;
     const menu = data.allMenuYaml.edges.map(item => item.node);
     return (
-      <div className={headerStyles.header + ' ' + (this.state.scrolled ? headerStyles.scrolled : '')}>
+      <div className={headerStyles.header + ' ' + (scrolled ? headerStyles.scrolled : '')}>
         <Helmet>
           <meta charSet="utf-8" />
           <title>kryptokrauts.com</title>
@@ -62,10 +35,10 @@ export default class Header extends Component {
           }
         </div>
         <Social className={headerStyles.socialinfo} providers={metaInfo.links} />
-        <div className={headerStyles.menuMobileLauncher} onClick={this.toggleMobileMenu()}>
+        <div className={headerStyles.menuMobileLauncher} onClick={toggleMobileMenu}>
           <i className="fas fa-bars"></i>
         </div>
-        <div className={headerStyles.menuMobile + ' ' + (this.state.mobileMenuOpen ? headerStyles.menuMobileActive : '')}>
+        <div className={headerStyles.menuMobile + ' ' + (mobileMenuOpen ? headerStyles.menuMobileActive : '')}>
           {menu.map((item, i) => (
             <div key={i} className={headerStyles.menuItemContainer}>
               {!item.path ? (
@@ -80,10 +53,9 @@ export default class Header extends Component {
     )
   }
 
-  render() {
-    return (
-      <StaticQuery
-        query={graphql`
+  return (
+    <StaticQuery
+      query={graphql`
         query {
           site {
             siteMetadata {
@@ -106,8 +78,7 @@ export default class Header extends Component {
           }
         }
         `}
-        render={this.headerRenderer.bind(this)}
-      ></StaticQuery>
-    )
-  }
+      render={headerRenderer}
+    ></StaticQuery>
+  )
 }

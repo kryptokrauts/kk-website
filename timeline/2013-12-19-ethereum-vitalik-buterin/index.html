@@ -40,71 +40,25 @@
         }
       }
     })
-  </script><link as="script" rel="preload" href="/webpack-runtime-a08e40c53edb12956dbe.js"/><link as="script" rel="preload" href="/app-0634f2b1cf5ac2d0c89b.js"/><link as="script" rel="preload" href="/styles-a45189f73458fa1a3627.js"/><link as="script" rel="preload" href="/1-3f2ff471150dd8c5cdb1.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-4d8f7319f194caeb1f63.js"/><link as="fetch" rel="preload" href="/static/d/213/path---log-how-to-contribute-161-5ac-iGj9G7HDTBiFoHUos45qnIpwE.json" crossorigin="use-credentials"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div><div class="header-module--header--2Q3RK "><img src="/img/logo.svg" class="logo-module--container--2ePwd undefined" alt="logo"/><div class="header-module--menu--3bKjy"><div class="header-module--menu-item-container--2OvRb"><a href="/log" class="">kraut<b>LOG</b></a></div><div class="header-module--menu-item-container--2OvRb"><a href="/timeline" class="">kraut<b>TIMELINE</b></a></div><div class="header-module--menu-item-container--2OvRb"><a href="/lexicon" class="">kraut<b>LEXICON</b></a></div><div class="header-module--menu-item-container--2OvRb"><div class="header-module--menu-inactive-badge--Xo_QI">coming soon</div><a class="inactive">kraut<b>ACADEMY</b></a></div></div><div class="social-module--container--2-FKh header-module--socialinfo--1w6NP"><a href="https://github.com/kryptokrauts" class="social-module--icon--2ysdq"><i class="fab fa-github"></i></a><a href="https://twitter.com/kryptokrauts" class="social-module--icon--2ysdq"><i class="fab fa-twitter"></i></a></div><div class="header-module--menu-mobile-launcher--2ejy9"><i class="fas fa-bars"></i></div><div class="header-module--menu-mobile--2W70f "><div class="header-module--menu-item-container--2OvRb"><a href="/log" class="">kraut<b>LOG</b></a></div><div class="header-module--menu-item-container--2OvRb"><a href="/timeline" class="">kraut<b>TIMELINE</b></a></div><div class="header-module--menu-item-container--2OvRb"><a href="/lexicon" class="">kraut<b>LEXICON</b></a></div><div class="header-module--menu-item-container--2OvRb"><div class="header-module--menu-inactive-badge--Xo_QI">coming soon</div><a class="inactive">kraut<b>ACADEMY</b></a></div></div></div><div class="content"><div class="blogTemplate-module--post--YTpWw"><h1 class="blogTemplate-module--title--3S--G">How to contribute to the timeline</h1><div class="blogTemplate-module--date--wlawP">published: <!-- -->31.03.2019</div><div class="blogTemplate-module--author--siqfe">Author: <!-- -->Jan-Patrick Weller &amp; Marco Walz</div><div class="blogTemplate-module--content--2Dyrg"><p>We encourage everyone to help us maintaining the crypto-timeline. To be able to contribute content you need to have some basic <a href="https://guides.github.com/introduction/git-handbook/">git-skills</a> and know how content can be written with <a href="https://guides.github.com/features/mastering-markdown/">markdown</a>.</p>
-<p>This is really all you need to know. If these requirements are met you are ready to contribute by following these steps:</p>
-<ol>
-<li>fork our repository <a href="https://github.com/kryptokrauts/kk-website">kk-website</a></li>
-<li>
-<p>look for existing <a href="https://github.com/kryptokrauts/kk-website/issues?q=is%3Aopen+is%3Aissue+label%3Atimeline+label%3Acontent">timeline-issues</a></p>
-<ul>
-<li>alternatively create a new issue for the timeline-event you want to write about and label it with <code>content</code> and <code>timeline</code></li>
-</ul>
-</li>
-<li>create a new branch from the actual <code>origin/master</code></li>
-<li>create a markdown file in the timeline folder <code>src/data/timeline</code> and make sure its name begins with the date of the timeline event (e.g. <code>2010-05-22-pizzas-for-10000-btc.md</code>)</li>
-<li>
-<p>write the article</p>
-<ul>
-<li>see below in more detail how the file should be structured</li>
-</ul>
-</li>
-<li>commit your changes and provide the number of the github issue in the commit message</li>
-<li>
-<p>create a pull-request into the master of our repository</p>
-<ul>
-<li>we will review the contribution and might ask for some adjustments</li>
-<li>if the review is fine we will merge the pull-request and the article should show up after a short period of time</li>
-</ul>
-</li>
-</ol>
-<p><strong>Note:</strong>
-We are using <a href="https://www.gatsbyjs.org/">Gatsby</a> to build the kryptokrauts website. If you want to preview your changes locally you need to install it by running <code>npm install -g gatsby-cli</code>. Afterwards you will be able to run <code>gatsby develop</code> to serve the website on <a href="http://localhost:8000">http://localhost:8000</a>.</p>
-<p><strong>How to structure the content of the markdown-file?</strong></p>
-<p>Please add a frontmatter to have some meta information attached to your new timeline entry. The frontmatter
-looks like following:</p>
-<pre><code>---
-publishedOn: "YYYY-MM-DD"
-date: "YYYY-MM-DD"
-title: "Some title you can choose"
-path: "path/to/entry"
-author: "Some Guy"
-icon: "fontawesome icon name"
-thumbnail: "url to a cool image"
-thumbnailSource: "where you got the image from"
----
-</code></pre>
-<p>The date should contain the release date of the article. The title is the name which is displayed in the main section and the path is the URL to reach the article. The path should match the following pattern:</p>
-<ul>
-<li><code>timeline/[filename]</code></li>
-</ul>
-<p>The icon can be any fontawesome icon name and will be displayed in the timeline. The default icon is:</p>
-<ul>
-<li>
-<p><code>fas fa-bell</code></p>
-</li>
-</ul>
-<p>Optionally you can provide a thumbnail-image which will be rendered in the background of the timeline-event. Make sure to <strong><em>only use royalty free images</em></strong> and always provide the source where it comes from.</p>
-<p>All the other content can be added below and does support all standard markdown. Images can also be included in the content section. Again, don't forget to only use royalty free images and provide the respective source. Example:</p>
-<pre><code>&#x3C;div style="font-size:80%;">
-    &#x3C;img src="https://images.pexels.com/photos/730567/pexels-photo-730567.jpeg?auto=compress&#x26;cs=tinysrgb&#x26;dpr=2&#x26;w=100" >&#x3C;br />&#x3C;i>Image: Pexels&#x3C;/i>
-&#x3C;/div>
-</code></pre>
-<p>The example will be rendered as follows:</p>
-<div style="font-size:80%;">
-    <img src="https://images.pexels.com/photos/730567/pexels-photo-730567.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=100" ><br /><i>Image: Pexels</i>
+  </script><link as="script" rel="preload" href="/webpack-runtime-a08e40c53edb12956dbe.js"/><link as="script" rel="preload" href="/app-0634f2b1cf5ac2d0c89b.js"/><link as="script" rel="preload" href="/styles-a45189f73458fa1a3627.js"/><link as="script" rel="preload" href="/1-3f2ff471150dd8c5cdb1.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-4d8f7319f194caeb1f63.js"/><link as="fetch" rel="preload" href="/static/d/841/path---timeline-2013-12-19-ethereum-vitalik-buterin-572-a5b-WqKxSvH9ONNRTW6vcJmdPZOQL6k.json" crossorigin="use-credentials"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div><div class="header-module--header--2Q3RK "><img src="/img/logo.svg" class="logo-module--container--2ePwd undefined" alt="logo"/><div class="header-module--menu--3bKjy"><div class="header-module--menu-item-container--2OvRb"><a href="/log" class="">kraut<b>LOG</b></a></div><div class="header-module--menu-item-container--2OvRb"><a href="/timeline" class="">kraut<b>TIMELINE</b></a></div><div class="header-module--menu-item-container--2OvRb"><a href="/lexicon" class="">kraut<b>LEXICON</b></a></div><div class="header-module--menu-item-container--2OvRb"><div class="header-module--menu-inactive-badge--Xo_QI">coming soon</div><a class="inactive">kraut<b>ACADEMY</b></a></div></div><div class="social-module--container--2-FKh header-module--socialinfo--1w6NP"><a href="https://github.com/kryptokrauts" class="social-module--icon--2ysdq"><i class="fab fa-github"></i></a><a href="https://twitter.com/kryptokrauts" class="social-module--icon--2ysdq"><i class="fab fa-twitter"></i></a></div><div class="header-module--menu-mobile-launcher--2ejy9"><i class="fas fa-bars"></i></div><div class="header-module--menu-mobile--2W70f "><div class="header-module--menu-item-container--2OvRb"><a href="/log" class="">kraut<b>LOG</b></a></div><div class="header-module--menu-item-container--2OvRb"><a href="/timeline" class="">kraut<b>TIMELINE</b></a></div><div class="header-module--menu-item-container--2OvRb"><a href="/lexicon" class="">kraut<b>LEXICON</b></a></div><div class="header-module--menu-item-container--2OvRb"><div class="header-module--menu-inactive-badge--Xo_QI">coming soon</div><a class="inactive">kraut<b>ACADEMY</b></a></div></div></div><div class="content"><div class="blogTemplate-module--post--YTpWw"><h1 class="blogTemplate-module--title--3S--G">19.12.2013 - <!-- -->Ethereum - Vitalik Buterin</h1><div class="blogTemplate-module--date--wlawP">published: <!-- -->5.10.2019</div><div class="blogTemplate-module--author--siqfe">Author: <!-- -->Marco Walz</div><div class="blogTemplate-module--content--2Dyrg"><div style="float: right; margin: 0 0 15px 20px; padding: 0 0 0 10px;text-align: right; font-size:80%;">
+    <img src="https://live.staticflickr.com/4402/37131608036_bfd5d734f6_n.jpg" ><br /><i>Vitalik Buterin in 2017 | Image: TechCrunch</i>
 </div>
-<p>Have fun creating content for our crypto-timeline. If you have any questions or run into problems you can always contact us via <a href="https://twitter.com/kryptokrauts">Twitter</a>.</p>
-<p><strong>Thanks for you contribution!</strong></p></div></div></div></div></div></div><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-139263777-1"></script><script>
+<p>The guy on the right is <a href="https://vitalik.ca/">Vitalik Buterin</a> and he is the mastermind behind Ethereum.</p>
+<p>In late 2013 he initially <a href="https://web.archive.org/web/20131219030753/http://vitalik.ca/ethereum.html">published his idea</a> and now 6 years later Ethereum is one of he most prominent blockchains that allow the execution of so-called <a href="/lexicon#smart-contract">smart contracts</a>.</p>
+<p>When <a href="https://gavwood.com/">Gavin Wood</a> noticed about Ethereum he reached out to Vitalik to offer help with his C++ programming skills. Gavin became co-founder of Ethereum and in April 2014 he published the initial version of the <a href="https://ethereum.github.io/yellowpaper/paper.pdf">Ethereum Yellow Paper</a> which served as the technical specification for the Ethereum Virtual Machine (EVM).</p>
+<h2 id="ethereum-foundation--ether-presale"><a href="#ethereum-foundation--ether-presale" aria-label="ethereum foundation  ether presale permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ethereum Foundation &#x26; ether presale</h2>
+<p>To kickstart a large network of developers, miners, investors, and other stakeholders, Ethereum announced its plan to conduct a presale of ether tokens, the currency unit of Ethereum. The legal and financial complexities of raising funds through a presale led to the creation of several legal entities, including the Ethereum Foundation (Stiftung Ethereum) established June 2014 in Zug, Switzerland.</p>
+<p>Beginning in July 2014, Ethereum distributed the initial allocation of ether via a 42-day public ether presale, netting 31,591 bitcoins, worth $18,439,086 at that time, in exchange for about 60,102,216 ether. The results of the sale were initially used to pay back mounting legal debts and also for the months of developer effort that had yet to be compensated, and to finance the ongoing development of the Ethereum.</p>
+<h2 id="ethereum-frontier-launch"><a href="#ethereum-frontier-launch" aria-label="ethereum frontier launch permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ethereum Frontier launch</h2>
+<p>The first development stage of Ethereum was called "Frontier". On July 30, 2015, the <a href="https://etherscan.io/block/1">first Ethereum block</a> was mined and developers began writing contracts and decentralized apps to deploy on the Ethereum mainnet. In addition, miners began to join the Ethereum network to help secure the Ethereum blockchain and earn ether from <a href="/lexicon#mining">mining</a> blocks. Even though the Frontier release is the first milestone in the Ethereum project and was intended for use by developers as a beta version, it turned out to be more capable and reliable than anyone expected, and developers have rushed in to build solutions and improve the Ethereum ecosystem.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li><a href="https://medium.com/blockwhat/13-ethereum-the-world-computer-bd22cecbc0d">https://medium.com/blockwhat/13-ethereum-the-world-computer-bd22cecbc0d</a></li>
+<li><a href="https://web.archive.org/web/20131219030753/http://vitalik.ca/ethereum.html">https://web.archive.org/web/20131219030753/http://vitalik.ca/ethereum.html</a></li>
+<li><a href="https://vitalik.ca/general/2017/09/14/prehistory.html">https://vitalik.ca/general/2017/09/14/prehistory.html</a></li>
+<li><a href="https://ethereum-homestead.readthedocs.io/en/latest/introduction/history-of-ethereum.html">https://ethereum-homestead.readthedocs.io/en/latest/introduction/history-of-ethereum.html</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ethereum">https://en.wikipedia.org/wiki/Ethereum</a></li>
+</ul></div></div></div></div></div></div><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-139263777-1"></script><script>
       
       function gaOptout(){document.cookie=disableStr+'=true; expires=Thu, 31 Dec 2099 23:59:59 UTC;path=/',window[disableStr]=!0}var gaProperty='UA-139263777-1',disableStr='ga-disable-'+gaProperty;document.cookie.indexOf(disableStr+'=true')>-1&&(window[disableStr]=!0);
       if(!(navigator.doNotTrack == "1" || window.doNotTrack == "1")) {
@@ -114,4 +68,4 @@ thumbnailSource: "where you got the image from"
 
         gtag('config', 'UA-139263777-1', {"anonymize_ip":true,"cookie_expires":0,"send_page_view":false});
       }
-      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-blog-template-js","jsonName":"log-how-to-contribute-161","path":"/log/how-to-contribute"};window.dataPath="213/path---log-how-to-contribute-161-5ac-iGj9G7HDTBiFoHUos45qnIpwE";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-0634f2b1cf5ac2d0c89b.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-4d8f7319f194caeb1f63.js"],"component---src-pages-index-js":["/component---src-pages-index-js-7f1736be6008a431227a.js"],"component---src-pages-lexicon-js":["/component---src-pages-lexicon-js-c764ca280f2c5a3b1f27.js"],"component---src-pages-log-js":["/component---src-pages-log-js-7db6e3091b53aabb5540.js"],"component---src-pages-timeline-js":["/component---src-pages-timeline-js-4526bdbe03fd4551bde1.js"],"pages-manifest":["/pages-manifest-a97d52318c7e839a24e8.js"]};/*]]>*/</script><script src="/component---src-templates-blog-template-js-4d8f7319f194caeb1f63.js" async=""></script><script src="/1-3f2ff471150dd8c5cdb1.js" async=""></script><script src="/styles-a45189f73458fa1a3627.js" async=""></script><script src="/app-0634f2b1cf5ac2d0c89b.js" async=""></script><script src="/webpack-runtime-a08e40c53edb12956dbe.js" async=""></script></body></html>
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-blog-template-js","jsonName":"timeline-2013-12-19-ethereum-vitalik-buterin-572","path":"/timeline/2013-12-19-ethereum-vitalik-buterin"};window.dataPath="841/path---timeline-2013-12-19-ethereum-vitalik-buterin-572-a5b-WqKxSvH9ONNRTW6vcJmdPZOQL6k";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-0634f2b1cf5ac2d0c89b.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-4d8f7319f194caeb1f63.js"],"component---src-pages-index-js":["/component---src-pages-index-js-7f1736be6008a431227a.js"],"component---src-pages-lexicon-js":["/component---src-pages-lexicon-js-c764ca280f2c5a3b1f27.js"],"component---src-pages-log-js":["/component---src-pages-log-js-7db6e3091b53aabb5540.js"],"component---src-pages-timeline-js":["/component---src-pages-timeline-js-4526bdbe03fd4551bde1.js"],"pages-manifest":["/pages-manifest-a97d52318c7e839a24e8.js"]};/*]]>*/</script><script src="/component---src-templates-blog-template-js-4d8f7319f194caeb1f63.js" async=""></script><script src="/1-3f2ff471150dd8c5cdb1.js" async=""></script><script src="/styles-a45189f73458fa1a3627.js" async=""></script><script src="/app-0634f2b1cf5ac2d0c89b.js" async=""></script><script src="/webpack-runtime-a08e40c53edb12956dbe.js" async=""></script></body></html>

@@ -55,15 +55,17 @@ Optionally you can provide a thumbnail-image which will be rendered in the backg
    
 All the other content can be added below and does support all standard markdown. Images can also be included in the content section. Again, don't forget to only use royalty free images and provide the respective source. Example:
 ```
-![Bitcoin-Image](https://images.pexels.com/photos/730567/pexels-photo-730567.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=100)
-*Image: Pexels*
+<div style="font-size:80%;">
+    <img src="https://images.pexels.com/photos/730567/pexels-photo-730567.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=100" ><br /><i>Image: Pexels</i>
+</div>
 ```
 
 The example will be rendered as follows:
 
-![Bitcoin-Image](https://images.pexels.com/photos/730567/pexels-photo-730567.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=100)
-*Image: Pexels*
+<div style="font-size:80%;">
+    <img src="https://images.pexels.com/photos/730567/pexels-photo-730567.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=100" ><br /><i>Image: Pexels</i>
+</div>
 
-Have fun creating content for kryptokraut's crypto-timeline. If you have any questions or run into problems you can always contact us via [Twitter](https://twitter.com/kryptokrauts).
+Have fun creating content for our crypto-timeline. If you have any questions or run into problems you can always contact us via [Twitter](https://twitter.com/kryptokrauts).
 
 **Thanks for you contribution!**

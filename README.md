@@ -10,7 +10,7 @@
 
 This is the repository for the kryptokrauts.com homepage.  
 
-We are a group of Blockchain enthusiasts building a community for Blockchain and Crypto.
+We are a group of blockchain enthusiasts building a community for blockchain and crypto.
 
 Please visit us at kryptokrauts.com and have a look at our projects.
 
@@ -22,6 +22,5 @@ If you like this project we would appreciate your support:
 
 - æternity:
   - [ak_5z1fmzTKR1GA1P7qiLDCC1s3V7AK2RRpNbXqUhfHQbUeg7mmV](https://explorer.aepps.com/#/account/ak_5z1fmzTKR1GA1P7qiLDCC1s3V7AK2RRpNbXqUhfHQbUeg7mmV)
-  - [kryptokrauts.test](https://www.aeknow.org/aens/query/kryptokrauts.test)
 - via [ArkaneNetwork](https://arkane.network/):
   - kryptokrauts@protonmail.com

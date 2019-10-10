@@ -3,13 +3,13 @@
   position: fixed;
   right: 10px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-end;
   user-select: none;
   height: 100%;
   top: 0;
   margin:0;
-  padding: 10px 0;
+  padding: 70px 0;
   box-sizing: border-box;
 }
 
@@ -33,6 +33,12 @@
   color: #000;
 }
 
+@media only screen and (max-width: 710px) {
+  .container {
+    padding: 50px 0;
+  }
+}
+
 @media only screen and (max-height: 650px) and (max-width: 770px) {
   .char {
     line-height: 15px;
@@ -42,6 +48,7 @@
     font-size: 15px;
     font-weight: bold;
   }
+
 }
 
 @media only screen and (min-width: 770px) {
@@ -51,6 +58,7 @@
     top: 65px;
     right: 0;
     height: 35px;
+    justify-content: center;
     width: 100%;
     padding: 0;
     z-index: 101;

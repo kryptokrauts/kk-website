@@ -14,8 +14,12 @@ export default (props) => {
     )
   } else {
     const itemData = props.data.frontmatter;
+    let className = timelineItem.container;
+    if (itemData.path) {
+      className = `${className} ${timelineItem.interactive}`;
+    }
     return (
-      <div className={timelineItem.container + ' ' + props.className}
+      <div className={className + ' ' + props.className}
         onClick={() => openURL(itemData.path)}>
         {itemData.thumbnail ? (
           <div className={timelineItem.thumbnailContainer}>

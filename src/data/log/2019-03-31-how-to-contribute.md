@@ -46,7 +46,9 @@ thumbnailSource: "where you got the image from"
 ```
 
 The date should contain the release date of the article. The title is the name which is displayed in the main section and the path is the URL to reach the article. The path should match the following pattern:
-- `timeline/[filename]`
+- `timeline/[filename]`  
+
+The `path` is an optional parameter. If you do not specify a path you can create a timeline item without content. So the item is not clickable. We will only show the event as part of the timeline but not attach an article to it.
 
 The icon can be any fontawesome icon name and will be displayed in the timeline. The default icon is:
 - `fas fa-bell`

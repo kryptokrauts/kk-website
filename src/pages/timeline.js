@@ -21,7 +21,11 @@ export default ({ data }) => (
 export const query = graphql`
   query {
     allMarkdownRemark(
-      filter: {frontmatter: {path: {regex: "/^\/timeline/" }}}
+      filter: {
+        fileAbsolutePath: {
+          regex: "/\/timeline/"
+        }
+      },
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {

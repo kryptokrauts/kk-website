@@ -1,9 +1,9 @@
 ---
 publishedOn: "2019-10-05"
 date: "2013-12-19"
-title: "Ethereum - Vitalik Buterin"
+title: "Vitalik Buterin: Ethereum"
 path: "/timeline/2013-12-19-ethereum-vitalik-buterin"
-author: Marco Walz
+author: "Marco Walz"
 icon: "fab fa-ethereum"
 thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Ethereum_logo.svg/150px-Ethereum_logo.svg.png"
 thumbnailSource: Wikimedia

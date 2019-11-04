@@ -11,7 +11,7 @@ const renderFirst = (itemClasses) => (
 )
 
 const renderItem = (itemData, itemClasses) => (
-  <div className={itemClasses}
+  <div id={itemData.title.replace(/[. ,:-]+/g, "-").replace(/["]+/g, "")} className={itemClasses}
     onClick={() => openURL(itemData.path)}>
     {itemData.thumbnail ? (
       <div className={timelineItem.thumbnailContainer}>
@@ -21,7 +21,10 @@ const renderItem = (itemData, itemClasses) => (
     ) : ""}
     <div className={timelineItem.icon}><i className={itemData.icon || "fas fa-bell"}></i></div>
     <div className={timelineItem.date}>{dateFormatter(itemData.date)}</div>
-    <div className={timelineItem.title}>{itemData.title}</div>
+    <a href={"#" + itemData.title.replace(/[. ,:-]+/g, "-").replace(/["]+/g, "")}></a>
+    <div className={timelineItem.title}>
+      {itemData.title}
+    </div>
     <div className={timelineItem.line}></div>
   </div>
 )

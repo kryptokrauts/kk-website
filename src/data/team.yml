@@ -54,3 +54,16 @@
     github: https://github.com/the-icarus
     twitter:
     linkedin:
+
+- name: Nandan Joshi
+  avatar: https://github.com/calculi.png
+  roles:
+    - Developer (SDK, Backend)
+  joined: 2019-10-25
+  company:
+    name: targens GmbH
+    website: https://www.targens.de/
+  profiles:
+    github: https://github.com/calculi
+    twitter: https://twitter.com/nandanito
+    linkedin: https://www.linkedin.com/in/nandanjoshi/

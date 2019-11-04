@@ -1,19 +1,32 @@
+- project: aens-domain-claimer
+  year: 2019
+  description: a spring application that uses the aepp-sdk-java to claim domains on the æternity blockchain
+  work: fully developed and maintained by kryptokrauts.com
+  links:
+    website: https://github.com/kryptokrauts/aens-domain-claimer
+    github: https://github.com/kryptokrauts/aens-domain-claimer
+    docs:
+    twitter: https://twitter.com/kryptokrauts
+  tags:
+    - ÆNS
+    - æternity
+    - naming system
+    - domains
 - project: aepp-sdk-java
   year: 2019
-  description: A community developed Java SDK to interact with the æternity blockchain
+  description: a community developed Java SDK to interact with the æternity blockchain
   work: fully developed and maintained by kryptokrauts.com
   links:
     website: https://github.com/kryptokrauts/aepp-sdk-java
     github: https://github.com/kryptokrauts/aepp-sdk-java
-    docs:
+    docs: https://kryptokrauts.gitbook.io/aepp-sdk-java/
     twitter: https://twitter.com/kryptokrauts
   tags:
-    - aeternity
-    - java
-    - sdk
+    - æternity
+    - Java
+    - SDK
     - blockchain
     - crypto
-
 - project: ArkaneNetwork
   year: 2019
   description: Arkane is a multi-blockchain wallet provider that builds an open network between individuals, ecosystems and dapps

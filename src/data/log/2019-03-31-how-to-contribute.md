@@ -3,22 +3,22 @@ publishedOn: "2019-03-31"
 title: "How to contribute to the timeline"
 path: "/log/how-to-contribute"
 author: Jan-Patrick Weller & Marco Walz
-introText: "You want to know to to contribute to our crypto-timeline? In this article you get all the information you need!"
-thumbnail: "https://cdn.pixabay.com/photo/2016/11/29/07/10/business-1868015_960_720.jpg"
-thumbnailSource: "Pixabay"
-tags: ["Timeline", "How-To"]
+introText: "You want to know how to contribute to our crypto-timeline? In this article you get all the information you need!"
+thumbnail: "/img/thumbnails/timeline.png"
+thumbnailSource: ""
+tags: ["timeline", "how-to"]
 ---
 We encourage everyone to help us maintaining the crypto-timeline. To be able to contribute content you need to have some basic [git-skills](https://guides.github.com/introduction/git-handbook/) and know how content can be written with [markdown](https://guides.github.com/features/mastering-markdown/).
+
+## Step by step guide
 
 This is really all you need to know. If these requirements are met you are ready to contribute by following these steps:
 
 1. fork our repository [kk-website](https://github.com/kryptokrauts/kk-website)
-1. look for existing [timeline-issues](https://github.com/kryptokrauts/kk-website/issues?q=is%3Aopen+is%3Aissue+label%3Atimeline+label%3Acontent)
-   - alternatively create a new issue for the timeline-event you want to write about and label it with `content` and `timeline`
 1. create a new branch from the actual `origin/master`
 1. create a markdown file in the timeline folder `src/data/timeline` and make sure its name begins with the date of the timeline event (e.g. `2010-05-22-pizzas-for-10000-btc.md`)
 1. write the article
-   - see below in more detail how the file should be structured
+   - see [below](#how-to-structure-the-content-of-the-markdown-file) in more detail how the file should be structured
 1. commit your changes and provide the number of the github issue in the commit message
 1. create a pull-request into the master of our repository
    - we will review the contribution and might ask for some adjustments
@@ -27,7 +27,7 @@ This is really all you need to know. If these requirements are met you are ready
 **Note:**
 We are using [Gatsby](https://www.gatsbyjs.org/) to build the kryptokrauts website. If you want to preview your changes locally you need to install it by running `npm install -g gatsby-cli`. Afterwards you will be able to run `gatsby develop` to serve the website on http://localhost:8000.
 
-**How to structure the content of the markdown-file?**
+## How to structure the content of the markdown-file?
 
 Please add a frontmatter to have some meta information attached to your new timeline entry. The frontmatter
 looks like following:
@@ -70,4 +70,4 @@ The example will be rendered as follows:
 
 Have fun creating content for our crypto-timeline. If you have any questions or run into problems you can always contact us via [Twitter](https://twitter.com/kryptokrauts).
 
-**Thanks for you contribution!**
+## Thanks for you contribution!

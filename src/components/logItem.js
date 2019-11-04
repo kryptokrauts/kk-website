@@ -10,7 +10,9 @@ export default (props) => {
             {itemData.thumbnail ? (
                 <div className={logItemStyle.thumbnailContainer}>
                     <img className={logItemStyle.thumbnail} src={itemData.thumbnail} alt="" />
-                    <div className={logItemStyle.thumbnailSource}>Image: {itemData.thumbnailSource}</div>
+                    {itemData.thumbnailSource ? (
+                        <div className={logItemStyle.thumbnailSource}>Image: {itemData.thumbnailSource}</div>
+                    ) : ""}
                 </div>
             ) : ""}
             <div className={logItemStyle.content}>

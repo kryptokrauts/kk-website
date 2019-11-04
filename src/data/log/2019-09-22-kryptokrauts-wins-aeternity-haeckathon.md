@@ -25,7 +25,7 @@ Ahead of the [æternity universe one](https://aeternityuniverse.com/) the first 
 For demonstration purposes we made use of a JavaCard. In this specific case we used the [Keycard](https://keycard.status.im/) from the [status project](https://status.im/).
 
 ### Slides
-<iframe src="http://docs.google.com/gview?url=https://github.com/kryptokrauts/universe-one-hackathon/raw/master/IdentityOfThings.pdf&embedded=true" style="width:100%;" frameborder="0"></iframe>
+<iframe src="https://docs.google.com/gview?url=https://github.com/kryptokrauts/universe-one-hackathon/raw/master/IdentityOfThings.pdf&embedded=true" style="width:100%;" frameborder="0"></iframe>
 
 ### Github
 You can find all the work we did during the hæckathon on Github:

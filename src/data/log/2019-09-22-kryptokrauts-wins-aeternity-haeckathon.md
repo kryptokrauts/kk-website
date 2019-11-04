@@ -11,7 +11,7 @@ Ahead of the [æternity universe one](https://aeternityuniverse.com/) the first 
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hacking 👨‍💻 at Aeternity Hackathon at the Institute of Cryptoanarchy 🦸‍♂️ in Prague with <a href="https://twitter.com/marc0olo?ref_src=twsrc%5Etfw">@marc0olo</a> <a href="https://twitter.com/hashtag/aeternity?src=hash&amp;ref_src=twsrc%5Etfw">#aeternity</a> <a href="https://twitter.com/hashtag/Hackathon?src=hash&amp;ref_src=twsrc%5Etfw">#Hackathon</a> <a href="https://t.co/XHI4HhbUj8">pic.twitter.com/XHI4HhbUj8</a></p>&mdash; Nandan Joshi (@nandanito) <a href="https://twitter.com/nandanito/status/1172867845102952449?ref_src=twsrc%5Etfw">September 14, 2019</a></blockquote>
 
-## Identity of Things: "make brands original again!
+## Identity of Things: "make brands original again!"
 ### Problem
 - when you want to buy luxury items (e.g. a Rolex) you are not able to verify whether it is a fake or not
 - when you receive items (e.g. medicine) in any company involved in a supply chain you can't be sure whether the package content is being compromised in between
@@ -25,7 +25,7 @@ Ahead of the [æternity universe one](https://aeternityuniverse.com/) the first 
 For demonstration purposes we made use of a JavaCard. In this specific case we used the [Keycard](https://keycard.status.im/) from the [status project](https://status.im/).
 
 ### Slides
-<iframe src="https://docs.google.com/gview?url=https://github.com/kryptokrauts/universe-one-hackathon/raw/master/IdentityOfThings.pdf&embedded=true" style="width:100%;" frameborder="0"></iframe>
+<iframe src="https://docs.google.com/gview?url=https://github.com/kryptokrauts/universe-one-hackathon/raw/master/IdentityOfThings.pdf&embedded=true" style="width:100%;height:420px;" frameborder="0"></iframe>
 
 ### Github
 You can find all the work we did during the hæckathon on Github:

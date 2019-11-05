@@ -15,7 +15,7 @@ We managed to make the [first claim ever](https://explorer.aepps.com/#/tx/th_pxV
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">1 day later but 11 years earlier 🕶️ <a href="https://twitter.com/hashtag/SatoshiNakamoto?src=hash&amp;ref_src=twsrc%5Etfw">#SatoshiNakamoto</a> 🕶️ published the <a href="https://twitter.com/hashtag/bitcoin?src=hash&amp;ref_src=twsrc%5Etfw">#bitcoin</a> whitepaper and made history!<br><br>yesterday <a href="https://twitter.com/hashtag/kryptokrauts?src=hash&amp;ref_src=twsrc%5Etfw">#kryptokrauts</a> made history and performed the very first claim for an ÆNS <a href="https://twitter.com/hashtag/domain?src=hash&amp;ref_src=twsrc%5Etfw">#domain</a> on <a href="https://twitter.com/aeternity?ref_src=twsrc%5Etfw">@aeternity</a> which triggered the first <a href="https://twitter.com/hashtag/auction?src=hash&amp;ref_src=twsrc%5Etfw">#auction</a> after the Lima <a href="https://twitter.com/hashtag/hardfork?src=hash&amp;ref_src=twsrc%5Etfw">#hardfork</a> 🥳🥳🥳 <a href="https://t.co/goWrpJT0kr">https://t.co/goWrpJT0kr</a></p>&mdash; kryptokrauts (@kryptokrauts) <a href="https://twitter.com/kryptokrauts/status/1190030457255190529?ref_src=twsrc%5Etfw">October 31, 2019</a></blockquote>
 
 ## How did we achieve this?
-As we ware actively developing the [aepp-sdk-java](https://github.com/kryptokrauts/aepp-sdk-java) we expected this feature to be very important for the Lima [hardfork](/lexicon#hard-fork) and put in a lot of effort in our spare time to have it ready in time.
+As we are actively developing the [aepp-sdk-java](https://github.com/kryptokrauts/aepp-sdk-java) we expected this feature to be very important for the Lima [hardfork](/lexicon#hard-fork) and put in a lot of effort in our spare time to have it ready in time.
 
 ### aens-domain-claimer
 We used the [aepp-sdk-java](https://github.com/kryptokrauts/aepp-sdk-java) and built a spring-application called [aens-domain-claimer](https://github.com/kryptokrauts/aens-domain-claimer). It contains the logic to perform pre-claims (if necessary) and claims for domains provided through `application.properties`.
@@ -61,7 +61,7 @@ alt=13738264157424662553, nonce=1, ttl=0)
 
 ### Drama around kryptokrauts.chain
 **Overbidden**  
-Shortly before we would have been the owner of `kryptokrauts.chain` we [were overbidden](https://explorer.aepps.com/#/tx/th_kNBQdCtdtYGKnUMGs6Bam7Vq93Mx6dwo6oTLhsdznXEZoFgMK). Of course we [claimed the name again]() but we needed to wait another 480 blocks (~24 hours) to finally own the domain.
+Shortly before we would have been the owner of `kryptokrauts.chain` we [were overbidden](https://explorer.aepps.com/#/tx/th_kNBQdCtdtYGKnUMGs6Bam7Vq93Mx6dwo6oTLhsdznXEZoFgMK). Of course we [claimed the name again](https://explorer.aepps.com/#/tx/th_2aKbv2DSfa42UarE4WF7yQw9NVJ9LsPA38MdiuZks73pVLGwAh) but we needed to wait another 480 blocks (~24 hours) to finally own the domain.
 
 **Updating the domain**  
 When we finally owned the domain we wanted to set a pointer to our account. Unfortunately we assumed that setting the `nameTtl=0` would cause the protocol to automatically set the max possible `TTL` (`current blockHeight + 50000)` for the domain.  

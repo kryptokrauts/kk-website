@@ -37,6 +37,7 @@ export const query = graphql`
             icon
             thumbnail
             thumbnailSource
+            externalLink
           }
         }
       }

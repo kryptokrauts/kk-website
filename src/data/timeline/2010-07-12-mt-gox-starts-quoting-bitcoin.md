@@ -1,7 +1,7 @@
 ---
 publishedOn: ""
-date: "2011-06-19"
-title: "Mt.Gox hacked"
+date: "2010-07-12"
+title: "Mt.Gox starts quoting Bitcoin"
 path: ""
 author: ""
 icon: "fab fa-bitcoin"
@@ -12,6 +12,6 @@ externalLink: "https://en.wikipedia.org/wiki/Mt._Gox"
 
 **Sources**
 - https://en.wikipedia.org/wiki/Mt._Gox
-- https://99bitcoins.com/price-chart-history/
 - https://www.totalcrypto.io/mt-gox/
+- https://news.bitcoin.com/bitcoin-history-part-9-mt-gox-is-born/
 - https://www.wired.com/2014/03/bitcoin-exchange/

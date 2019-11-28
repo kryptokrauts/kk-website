@@ -7,10 +7,10 @@ author: ""
 icon: "fab fa-bitcoin"
 thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/240px-Bitcoin.svg.png"
 thumbnailSource: Wikimedia
+externalLink: "https://bitcoin.org/bitcoin.pdf"
 ---
 
 **Sources**
-
 - https://medium.com/blockwhat/08-bit-what-bitcoin-hello-world-166ac85141e
 - https://bitcoin.org/bitcoin.pdf
 - https://bitcoin.org/en/how-it-works

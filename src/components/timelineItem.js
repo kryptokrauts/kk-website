@@ -12,7 +12,7 @@ const renderFirst = (itemClasses) => (
 
 const renderItem = (itemData, itemClasses) => (
   <div id={itemData.title.replace(/[. ,:-]+/g, "-").replace(/["]+/g, "")} className={itemClasses}
-    onClick={() => openURL(itemData.path)}>
+    onClick={() => openURL(itemData.path ? itemData.path : itemData.externalLink)}>
     {itemData.thumbnail ? (
       <div className={timelineItem.thumbnailContainer}>
         <img className={timelineItem.thumbnail} src={itemData.thumbnail} alt="" />
@@ -36,11 +36,8 @@ export default (props) => {
     return renderFirst(className);
   } else {
     const itemData = props.data.frontmatter;
-    if (itemData.path) {
+    if (itemData.path || itemData.externalLink) {
       className = `${className} ${timelineItem.interactive}`;
-    }
-    if (!itemData.thumbnail) {
-      className = `${className} ${timelineItem.small}`;
     }
     return renderItem(itemData, className);
   }

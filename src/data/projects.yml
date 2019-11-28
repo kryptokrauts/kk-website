@@ -1,17 +1,3 @@
-- project: aens-domain-claimer
-  year: 2019
-  description: a spring application that uses the aepp-sdk-java to claim domains on the æternity blockchain
-  work: fully developed and maintained by kryptokrauts.com
-  links:
-    website: https://github.com/kryptokrauts/aens-domain-claimer
-    github: https://github.com/kryptokrauts/aens-domain-claimer
-    docs:
-    twitter: https://twitter.com/kryptokrauts
-  tags:
-    - ÆNS
-    - æternity
-    - naming system
-    - domains
 - project: aepp-sdk-java
   year: 2019
   description: a community developed Java SDK to interact with the æternity blockchain
@@ -19,7 +5,7 @@
   links:
     website: https://github.com/kryptokrauts/aepp-sdk-java
     github: https://github.com/kryptokrauts/aepp-sdk-java
-    docs: https://kryptokrauts.gitbook.io/aepp-sdk-java/
+    docs: https://kryptokrauts.gitbook.io/aepp-sdk-java
     twitter: https://twitter.com/kryptokrauts
   tags:
     - æternity
@@ -27,6 +13,35 @@
     - SDK
     - blockchain
     - crypto
+- project: contraect-maven-plugin
+  year: 2019
+  description: a maven plugin to generate java classes for smart contracts from sophia source code
+  work: fully developed and maintained by kryptokrauts.com
+  links:
+    website: https://github.com/kryptokrauts/contraect-maven-plugin
+    github: https://github.com/kryptokrauts/contraect-maven-plugin
+    docs: https://kryptokrauts.gitbook.io/contraect-maven-plugin
+    twitter: https://twitter.com/kryptokrauts
+  tags:
+    - æternity
+    - smart contract
+    - Java
+    - maven
+- project: aens-name-claimer
+  year: 2019
+  description: a spring application that uses the aepp-sdk-java to claim names on the æternity blockchain
+  work: fully developed and maintained by kryptokrauts.com
+  links:
+    website: https://github.com/kryptokrauts/aens-name-claimer
+    github: https://github.com/kryptokrauts/aens-name-claimer
+    docs:
+    twitter: https://twitter.com/kryptokrauts
+  tags:
+    - ÆNS
+    - æternity
+    - naming system
+    - Java
+    - spring boot
 - project: ArkaneNetwork
   year: 2019
   description: Arkane is a multi-blockchain wallet provider that builds an open network between individuals, ecosystems and dapps

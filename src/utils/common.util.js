@@ -1,4 +1,7 @@
 export function dateFormatter(date) {
+  if(date.length == 4) {
+    return date;
+  }
   if (!(date instanceof Date)) {
     date = new Date(date);
   }

@@ -44,8 +44,8 @@ As Nandan and Marco weren't able to attend to the conference our friend and team
 ## Support us
 Do you like our work? We would be happy about a small donation:
 - æternity:
-  - [ak_5z1fmzTKR1GA1P7qiLDCC1s3V7AK2RRpNbXqUhfHQbUeg7mmV](https://explorer.aepps.com/#/account/ak_5z1fmzTKR1GA1P7qiLDCC1s3V7AK2RRpNbXqUhfHQbUeg7mmV)
+  - ak_5z1fmzTKR1GA1P7qiLDCC1s3V7AK2RRpNbXqUhfHQbUeg7mmV
 - via [ArkaneNetwork](https://arkane.network/):
   - kryptokrauts@protonmail.com
 
-Don't forget [download Brave](https://brave.com/kry019) and send us tips from rewards you earned by watching advertisements :-)
+Don't forget to [download Brave](https://brave.com/kry019) and send us tips from rewards you earned by watching advertisements :-)

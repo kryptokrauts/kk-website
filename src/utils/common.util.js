@@ -21,7 +21,7 @@ export function openURL(url, external) {
         event_label: url,
         transport_type: "beacon",
         event_callback: function() {
-          console.debug("gtag click event callback is working!");
+          console.log("gtag click event callback is working!");
         }
       });
       window.open(url, "_blank");

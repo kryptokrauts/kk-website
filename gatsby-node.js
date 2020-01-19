@@ -2,16 +2,8 @@ const path = require("path")
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
-  const { createRedirect } = actions
 
   const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`)
-
-  createRedirect({
-    fromPath: `/log/first-claim-ever-of-an-aens-domain`,
-    isPermanent: true,
-    redirectInBrowser: true,
-    toPath: `/log/first-claim-ever-of-an-aens-name`,
-  });
 
   return graphql(`
   {

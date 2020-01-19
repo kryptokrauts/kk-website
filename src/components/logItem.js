@@ -6,7 +6,7 @@ import TagList from "./tagList";
 export default (props) => {
     const itemData = props.data.frontmatter;
     return (
-        <article className={logItemStyle.card} onClick={() => openURL(itemData.path)}>
+        <article className={logItemStyle.card} onClick={() => openURL(itemData.path, false)}>
             {itemData.thumbnail ? (
                 <div className={logItemStyle.thumbnailContainer}>
                     <img className={logItemStyle.thumbnail} src={itemData.thumbnail} alt="" />

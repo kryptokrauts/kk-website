@@ -5,11 +5,11 @@ import Social from "./social";
 import TagList from "./tagList";
 
 export default (props) => (
-  <div className={projectItemStyle.container} onClick={() => openURL(props.project.links.website)}>
+  <div className={projectItemStyle.container} onClick={() => openURL(props.project.links.website, true)}>
     <div className={projectItemStyle.name}>
       {props.project.project}
       <div className={projectItemStyle.addionalIcons}>{props.project.links.docs ?
-        <a href={props.project.links.docs} title="Documentation"><i className="fas fa-book"></i></a> : ''}</div>
+        <a href="#" onClick={() => openURL(props.project.links.docs, true)} title="Documentation"><i className="fas fa-book"></i></a> : ''}</div>
       <Social className={projectItemStyle.socialLinks} providers={props.project.links} />
     </div>
     <div className={projectItemStyle.content}>
@@ -20,11 +20,3 @@ export default (props) => (
     <TagList tags={props.project.tags} />
   </div>
 );
-
-/*
-        {data.allProjectsYaml.edges.map(({ node }) => (
-          <ul>
-
-          </ul>
-        ))}
-        */

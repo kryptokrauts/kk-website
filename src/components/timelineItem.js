@@ -12,7 +12,7 @@ const renderFirst = (itemClasses) => (
 
 const renderItem = (itemData, itemClasses) => (
   <div id={itemData.title.replace(/[. ,:-]+/g, "-").replace(/["]+/g, "")} className={itemClasses}
-    onClick={() => openURL(itemData.path ? itemData.path : itemData.externalLink)}>
+    onClick={() => openURL((itemData.path ? itemData.path : itemData.externalLink), itemData.path ? false : true)}>
     {itemData.thumbnail ? (
       <div className={timelineItem.thumbnailContainer}>
         <img className={timelineItem.thumbnail} src={itemData.thumbnail} alt="" />

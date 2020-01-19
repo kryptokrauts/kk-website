@@ -13,8 +13,20 @@ export function dateFormatter(date) {
   + date.getUTCFullYear());
 }
 
-export function openURL(url) {
+export function openURL(url, external) {
   if (url) {
-    window.location.href = url;
+    if(external) {
+      window.gtag("event", "click", {
+        event_category: "outbound",
+        event_label: url,
+        transport_type: "beacon",
+        event_callback: function() {
+          console.debug("gtag click event callback is working!");
+        }
+      });
+      window.open(url, "_blank");
+    } else {
+      window.location.href = url;
+    }
   }
 }

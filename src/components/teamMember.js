@@ -1,5 +1,5 @@
 import React from "react";
-import { dateFormatter } from "../utils/common.util";
+import { dateFormatter, openURL } from "../utils/common.util";
 import Social from "./social";
 import teamMemberStyle from "./teamMember.module.css";
 
@@ -18,7 +18,7 @@ export default (props) => (
       </div>
       <div><img className={teamMemberStyle.logo} src="/img/logo.svg" title="kryptokraut" alt="kryptokraut"></img> since {dateFormatter(props.member.joined)}</div>
       <div><i className="fas fa-user"></i> {props.member.roles.join(' & ')}</div>
-      <div><i className="fas fa-building" title="working at"></i> <a href={props.member.company.website}>{props.member.company.name}</a></div>
+      <div><i className="fas fa-building" title="working at"></i> <a href="#" onClick={() => openURL(props.member.company.website, true)}>{props.member.company.name}</a></div>
     </div>
   </div>
 )

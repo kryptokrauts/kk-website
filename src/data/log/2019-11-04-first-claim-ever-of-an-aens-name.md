@@ -90,6 +90,9 @@ Now we need to wait until block 164239 to be able to claim `kryptokrauts.chain` 
 ## Where will the nameFee go?
 The `nameFee` of all claimed names will be collected and locked in the account *ak_11111111111111111111111111111111273Yts*.
 
+**UPDATE**  
+We finally managed to claim and own our name and successfully performed an update transaction to set a pointer to our account. If you like the story send us some tips to **kryptokrauts.chain** =)
+
 ## Support us
 Do you like our work? We would be happy about a small donation:
 - æternity:

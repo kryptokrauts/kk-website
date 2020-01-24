@@ -51,6 +51,9 @@ Mnemonic seed phrases are the common practice to create and recover wallets. The
 
 An early old-style brainwallet was created by by memorization of a passphrase and converting it a private key with a hashing or key derivation algorithm (example: SHA256). That private key is then used to compute a blockchain address. This method was found to be ***very insecure and should not be used***. Humans are not a good source of entropy. Using a single address also has problems associated with address reuse.
 
+## Brave
+Brave is a ***privacy-by-default*** enabled browser that introduces a reward system called ***Brave Rewards***. We encourage you to read [our article](/log/basic-attention-token) to learn how it works and how users, publishers and adertisers can benefit through it. Or just [download](https://brave.com/kry019) it directly ;-)
+
 # C
 
 ## Cold storage

@@ -63,7 +63,8 @@ export default () => {
               founded,
               links {
                 github,
-                twitter
+                twitter,
+                discord
               }
             }
           }

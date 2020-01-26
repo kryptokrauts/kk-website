@@ -1,4 +1,7 @@
 - prefix: kraut
+  label: BASE
+  path: /
+- prefix: kraut
   label: LOG
   path: /log
 - prefix: kraut
@@ -8,5 +11,5 @@
   label: LEXICON
   path: /lexicon
 - prefix: kraut
-  label: ACADEMY
-  path: 
+  label: SUPPORT
+  path: /support

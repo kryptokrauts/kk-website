@@ -1,6 +1,6 @@
 import React from "react";
 import { OutboundLink } from "gatsby-plugin-google-gtag"
-import { dateFormatter, openURL } from "../utils/common.util";
+import { dateFormatter } from "../utils/common.util";
 import Social from "./social";
 import teamMemberStyle from "./teamMember.module.css";
 

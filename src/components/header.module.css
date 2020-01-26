@@ -73,6 +73,22 @@
   box-shadow: 0 0 5px rgba(0,0,0,0.4);
 }
 
+.menu-support-badge {
+  position: absolute;
+  color: rgb(155, 0, 0);
+  font-weight: bold;
+  border: 2px dashed rgb(155, 0, 0);
+  border-radius: 5px;
+  font-size: 11px;
+  background-color: rgba(255,255,255,0.8);
+  padding: 2px 5px;
+  transform: rotate(-20deg);
+  text-align: center;
+  width: 75px;
+  left: 10%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
 .menu-mobile .menu-inactive-badge {
   transform: rotate(-10deg);
   left: 15%;

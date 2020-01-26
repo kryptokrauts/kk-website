@@ -8,6 +8,8 @@ export default (props) => (
       <a href="#" onClick={() => openURL(props.providers.github, true)} className={socialStyle.icon}><i className="fab fa-github"></i></a> : ''}
     {props.providers.twitter ?
       <a href="#" onClick={() => openURL(props.providers.twitter, true)} className={socialStyle.icon}><i className="fab fa-twitter"></i></a> : ''}
+    {props.providers.discord ?
+      <a href="#" onClick={() => openURL(props.providers.discord, true)} className={socialStyle.icon}><i className="fab fa-discord"></i></a> : ''}
     {props.providers.linkedin ?
       <a href="#" onClick={() => openURL(props.providers.linkedin, true)} className={socialStyle.icon}><i className="fab fa-linkedin"></i></a> : ''}
   </div>

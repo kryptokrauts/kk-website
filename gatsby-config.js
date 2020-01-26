@@ -4,7 +4,8 @@ module.exports = {
     founded: 2018 - 01 - 13,
     links: {
       github: `https://github.com/kryptokrauts`,
-      twitter: `https://twitter.com/kryptokrauts`
+      twitter: `https://twitter.com/kryptokrauts`,
+      discord: `https://discord.gg/ZZTQgQb`
     }
   },
   plugins: [
@@ -47,14 +48,6 @@ module.exports = {
               },
             }
           },
-        ]
-      }
-    },
-    `gatsby-plugin-twitter`,
-    {
-        resolve: "gatsby-transformer-remark",
-        options: {
-          plugins: [
           {
             resolve: "gatsby-remark-embed-video",
             options: {
@@ -67,12 +60,17 @@ module.exports = {
                 {
                   id: 'youtube',
                   embedURL: (videoId) => `https://www.youtube-nocookie.com/embed/${videoId}`,
+                },
+                {
+                  id: 'vimdeo',
+                  embedURL: (videoId) => `https://player.vimeo.com/video/${videoId}`
                 }
               ] //Optional: Override URL of a service provider, e.g to enable youtube-nocookie support
             }
           }
-          ]
-        }
-      },
+        ]
+      }
+    },
+    `gatsby-plugin-twitter`,
   ],
 }

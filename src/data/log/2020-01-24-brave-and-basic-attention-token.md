@@ -1,10 +1,10 @@
 ---
 publishedOn: "2020-01-24"
 title: "Brave and Basic Attention Token"
-path: "/log/basic-attention-token"
+path: "/log/brave-and-basic-attention-token"
 author: Marco Walz
 introText: "Learn about the privacy-by-default enabled browser and Brave Rewards. We explain how it works and what BAT is!"
-thumbnail: "/img/thumbnails/timeline.png"
+thumbnail: "/img/thumbnails/brave_guide.png"
 thumbnailSource: ""
 tags: ["Brave", "BAT", "ERC-20"]
 ---
@@ -12,7 +12,7 @@ tags: ["Brave", "BAT", "ERC-20"]
 To access the content of the World Wide Web in a user-friendly manner we all need to use a browser. Nowadays we can choose from many different vendors and probably most of us already made their choice. For all of us that haven't done it yet or aren't used to a specific browser we want to present ***[Brave](https://brave.com/kry019)*** and explain how everybody (users, publishers and advertisers) can benefit using it.
 
 ## Who invented Brave?
-The co-founder and CEO of ***[Brave](https://brave.com/kry019)*** is [Brendan Eich](https://twitter.com/BrendanEich) who is well known for being the creator of [JavaScript](https://en.wikipedia.org/wiki/JavaScript) and former CTO and later on CEO of the [Mozilla Corporation]() which created the well known *Firefox* browser.
+The co-founder and CEO of ***[Brave](https://brave.com/kry019)*** is [Brendan Eich](https://twitter.com/BrendanEich) who is well known for being the creator of [JavaScript](https://en.wikipedia.org/wiki/JavaScript) and former CTO and later on CEO of the [Mozilla Corporation]() which created the well known and popular *Firefox* browser.
 
 > ... the entire industry is in need of a fundamental shift from tracking to privacy by default and by design.
 > <cite>Brendan Eich</cite>
@@ -53,6 +53,8 @@ This is probably the ***[Brave](https://brave.com/kry019)*** feature that most p
 
 So if you are an enthusiast and want your family and friends to learn more about crypto you should definitely tell them about ***[Brave](https://brave.com/kry019)***.
 
+`vimeo: 332258054`
+
 ### Brave Rewards / Brave Ads
 It is important to know that **all advertisements** are being **blocked by default** and that you need to **opt-in** in order to take part in Brave Rewards.  
 
@@ -70,15 +72,24 @@ In the diagram below you can see the the logo of BAT which is a **triangle** tha
 
 1. **Users**
    - as a user you just browse your favorite websites and from time to time get an advertisement displayed in form of a browser notification
-   - for "paying attention" to the advertisement you get rewarded in BAT tokens
+   - for "paying attention" to the advertisement you get rewarded in BAT
+   - you can enable auto-contributions to support your favorite websites
+   - you can tip other users (e.g. on Twitter or Github) directly if you like their content
 
 1. **Publishers**
    - as a publisher you can get verified by Brave and add different channels (e.g. website, youtube, twitter, twitch) where your consumers can send tips in form of BAT to
    - you can use the BAT and convert it to [fiat money](/lexicon/#fiat) or you can use it to reward your consumers or you can just [HODL](/lexicon/#hodl) it
 1. **Advertisers**
-   - as an advertiser you pay Brave in form of BAT to get your advertisements displayed to people that are probably interested in seeing it
+   - as an advertiser you pay BAT to get your advertisements displayed to people that are probably interested in seeing it
 
 <img src="/img/brave/bat_triad_diagram.png">
+
+## What are you waiting for?
+We encourage you to check out ***[Brave](https://brave.com/kry019)*** and share this article to spread awareness if you liked to read it.
+
+If you are already a Brave user you can send us some tips if you like ;-)
+
+<a href="https://brave.com/kry019"><img src="/img/brave/728x90-standard.png"></a>
 
 ## Further information:
 - [Brendan Eich on How Brave Is Working to Decentralize](https://unchainedpodcast.com/brendan-eich-on-how-brave-is-working-to-decentralize/) (Unchained Podcast, 21.01.2020)

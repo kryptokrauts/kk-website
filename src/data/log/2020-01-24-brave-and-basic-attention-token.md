@@ -46,7 +46,7 @@ All shields are enabled by default and can be customized per site.
 - Control site access to autoplay media
 - Send "Do not track" with browsing requests
 
-<a href="https://brave.com/kry019"><img src="/img/brave/728x90-standard.png"></a>
+<a href="https://brave.com/kry019"><img src="/img/brave/banner_horizontal.png"></a>
 
 ## Brave Rewards, Brave Ads and Basic Attention Token (BAT)
 This is probably the ***[Brave](https://brave.com/kry019)*** feature that most people out there are interested in. Before explaining it in more detail we want to point out that this reward system is probably ***the easiest way to get people started with cryptocurrency*** at this point of time.
@@ -73,8 +73,8 @@ In the diagram below you can see the the logo of BAT which is a **triangle** tha
 1. **Users**
    - as a user you just browse your favorite websites and from time to time get an advertisement displayed in form of a browser notification
    - for "paying attention" to the advertisement you get rewarded in BAT
-   - you can enable auto-contributions to support your favorite websites
-   - you can tip other users (e.g. on Twitter or Github) directly if you like their content
+   - you can enable auto-contributions to support websites you visit most frequently
+   - you can tip your favorite content producers directly through different channels (Website, Twitter, GitHub, Twitch, ...)
 
 1. **Publishers**
    - as a publisher you can get verified by Brave and add different channels (e.g. website, youtube, twitter, twitch) where your consumers can send tips in form of BAT to
@@ -85,11 +85,11 @@ In the diagram below you can see the the logo of BAT which is a **triangle** tha
 <img src="/img/brave/bat_triad_diagram.png">
 
 ## What are you waiting for?
-We encourage you to check out ***[Brave](https://brave.com/kry019)*** and share this article to spread awareness if you liked to read it.
+We encourage you to check out ***[Brave](https://brave.com/kry019)*** and share this article to spread awareness.
 
-If you are already a Brave user you can send us some tips if you like ;-)
+If you are already a Brave user you can send us some tips ;-)
 
-<a href="https://brave.com/kry019"><img src="/img/brave/728x90-standard.png"></a>
+<a href="https://brave.com/kry019"><img src="/img/brave/banner_horizontal.png"></a>
 
 ## Further information:
 - [Brendan Eich on How Brave Is Working to Decentralize](https://unchainedpodcast.com/brendan-eich-on-how-brave-is-working-to-decentralize/) (Unchained Podcast, 21.01.2020)

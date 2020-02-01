@@ -82,26 +82,43 @@
   left: -51px;
 }
 
+.year {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  font-size: 35px;
+  background-color: white;
+  right: -65px;
+  top: -30px;
+  border-radius: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .icon {
   position: absolute;
   height: 30px;
   width: 30px;
   font-size: 20px;
   background-color: white;
-  right: -70px;
+  right: -65px;
   border-radius: 100%;
   z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border: 5px solid #fff;
   color: #43a047;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.container:nth-child(odd) .year {
+  left: -65px;
 }
 
 .container:nth-child(odd) .icon {
-  left: -70px;
+  left: -65px;
 }
 
 .date {

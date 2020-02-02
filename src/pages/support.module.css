@@ -1,4 +1,31 @@
 .container {
-    justify-content: center;
-    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data {
+    max-width: 700px;
+  }
+  
+.data img {
+    max-width: 100%;
+}
+  
+img + em {
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+}
+  
+@media only screen and (max-width: 600px) {
+    .data {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .data > * {
+        word-break: break-word;
+    }
 }

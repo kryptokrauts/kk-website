@@ -1,29 +1,38 @@
+function monthToText(month) {
+  const monthNames = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"];
+  return monthNames[month];
+}
+
+function trackOutbound(url) {
+  if (window.gtag) {
+    window.gtag("event", "click", {
+      event_category: "outbound",
+      event_label: url,
+      transport_type: "beacon",
+      event_callback: function () {
+        console.log("gtag click event callback is working!");
+      }
+    });
+  }
+}
+
 export function dateFormatter(date) {
-  if(date.length === 4) {
+  if (date.length === 4) {
     return date;
   }
   if (!(date instanceof Date)) {
     date = new Date(date);
   }
-  function pad(n) {
-    return n<10 ? '0' + n: n
-  }
-  return pad(date.getUTCDate() + "."
-  + pad(date.getUTCMonth()+1) + "."
-  + date.getUTCFullYear());
+  return monthToText(date.getUTCMonth())
+    + ' ' + date.getUTCDate() + ', '
+    + date.getUTCFullYear();
 }
 
 export function openURL(url, external) {
   if (url) {
-    if(external) {
-      window.gtag("event", "click", {
-        event_category: "outbound",
-        event_label: url,
-        transport_type: "beacon",
-        event_callback: function() {
-          console.log("gtag click event callback is working!");
-        }
-      });
+    if (external) {
+      trackOutbound(url);
       window.open(url, "_blank");
     } else {
       window.location.href = url;

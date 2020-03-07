@@ -26,7 +26,6 @@ export const query = graphql`
           regex: "/\/timeline/"
         }
       },
-      sort: { order: ASC, fields: [frontmatter___date] }
     ) {
       edges {
         node {

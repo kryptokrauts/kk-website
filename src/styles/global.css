@@ -9,6 +9,7 @@ html, body {
     margin: 0;
     padding: 0;
     display: flex;
+    scroll-padding-top: 70px
 }
 
 #___gatsby {

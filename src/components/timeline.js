@@ -4,13 +4,16 @@ import timeline from "./timeline.module.css";
 
 
 const Group = (props) => (
-  <div className={timeline.year}><a href={"#" + props.year} className="anchor">{props.year}</a></div>
+  <div id={props.year} className={timeline.year}>
+    <a href={"#" + props.year}>{props.year}</a>
+  </div >
 );
 
 const getYear = timelineItem => timelineItem.date.substring(0, 4);
 
 const groupTimelineByYear = (timelineItems) => {
   return timelineItems
+    .sort((a, b) => b.node.frontmatter.date.localeCompare(a.node.frontmatter.date))
     .reduce((groups, item, index) => {
       const year = getYear(item.node.frontmatter);
       if (typeof groups[year] === 'undefined') {
@@ -32,7 +35,8 @@ const renderTimelineGroup = (timelineItems) => (
 
 const renderTimeline = timelineItems => {
   const groupedTimeline = groupTimelineByYear(timelineItems);
-  const groups = Object.keys(groupedTimeline);
+  const groups = Object.keys(groupedTimeline)
+    .sort((a, b) => b.localeCompare(a));
   return groups.map((group, index) => (
     <React.Fragment key={index}>
       <Group year={group} />

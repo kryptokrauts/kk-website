@@ -4,6 +4,19 @@ function monthToText(month) {
   return monthNames[month];
 }
 
+function trackOutbound(url) {
+  if (window.gtag) {
+    window.gtag("event", "click", {
+      event_category: "outbound",
+      event_label: url,
+      transport_type: "beacon",
+      event_callback: function () {
+        console.log("gtag click event callback is working!");
+      }
+    });
+  }
+}
+
 export function dateFormatter(date) {
   if (date.length === 4) {
     return date;
@@ -19,14 +32,7 @@ export function dateFormatter(date) {
 export function openURL(url, external) {
   if (url) {
     if (external) {
-      window.gtag("event", "click", {
-        event_category: "outbound",
-        event_label: url,
-        transport_type: "beacon",
-        event_callback: function () {
-          console.log("gtag click event callback is working!");
-        }
-      });
+      trackOutbound(url);
       window.open(url, "_blank");
     } else {
       window.location.href = url;

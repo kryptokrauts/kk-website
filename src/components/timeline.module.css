@@ -16,3 +16,10 @@
 .year a {
   text-decoration: none;
 }
+
+@media only screen and (max-width: 750px) {
+  .container {
+    align-items: flex-start;
+    width: auto;
+  }
+}

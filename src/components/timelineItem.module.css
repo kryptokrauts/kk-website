@@ -104,22 +104,50 @@
   font-size: 15px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
   .container.odd,
   .container {
-    margin-left: 0;
+    margin-left: 50px;
     margin-right: 0;
     margin-top: 10px;
+    flex-direction: row;
   }
 
   .container.odd .line,
   .container .line {
-    left: -31px;
-    height: calc(100% + 10px);
+    left: -36px;
+    height: calc(100% + 30px);
   }
   
   .container.odd .icon,
   .container .icon {
     left: -50px;
+  }
+
+  .thumbnail,
+  .container.odd .thumbnail {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+
+  .date,
+  .container.odd .date {
+    left: initial;
+    right: initial;
+    top: -15px;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+
+  .container.odd,
+  .container {
+    width: 200px;
+  }
+
+  .thumbnail,
+  .container.odd .thumbnail {
+    display: none;
   }
 }

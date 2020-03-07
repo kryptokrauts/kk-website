@@ -109,7 +109,7 @@
   line-height: 25px;
 }
 
-@media only screen and (max-width: 710px) {
+@media only screen and (max-width: 840px) {
   .header {
     height: 50px;
   }

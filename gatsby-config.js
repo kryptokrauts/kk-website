@@ -24,7 +24,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-autolink-headers',
             options: {
-              offsetY: 70
+              offsetY: 100
             }
           },
           {

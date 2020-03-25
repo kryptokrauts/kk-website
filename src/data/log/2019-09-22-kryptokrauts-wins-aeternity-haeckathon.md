@@ -42,10 +42,4 @@ As Nandan and Marco weren't able to attend to the conference our friend and team
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">We are the winners of <a href="https://twitter.com/aeternity?ref_src=twsrc%5Etfw">@aeternity</a> <a href="https://twitter.com/hashtag/UniverseOneH%C3%A6ckathon?src=hash&amp;ref_src=twsrc%5Etfw">#UniverseOneHæckathon</a> which took place last weekend. 🤗🎉<a href="https://twitter.com/marc0olo?ref_src=twsrc%5Etfw">@marc0olo</a> and I couldn&#39;t take part in <a href="https://twitter.com/hashtag/aeUni?src=hash&amp;ref_src=twsrc%5Etfw">#aeUni</a> to receive the honors, but our our third partner <a href="https://twitter.com/hayku06?ref_src=twsrc%5Etfw">@hayku06</a> represented us well.😊<br>Thanks to team of <a href="https://twitter.com/aeternity?ref_src=twsrc%5Etfw">@aeternity</a> for wonderful time in Prague. <a href="https://t.co/CxUEJkrlxG">pic.twitter.com/CxUEJkrlxG</a></p>&mdash; Nandan Joshi (@nandanito) <a href="https://twitter.com/nandanito/status/1175484469224116224?ref_src=twsrc%5Etfw">September 21, 2019</a></blockquote>
 
 ## Support us
-Do you like our work? We would be happy about a small donation:
-- æternity:
-  - ak_5z1fmzTKR1GA1P7qiLDCC1s3V7AK2RRpNbXqUhfHQbUeg7mmV
-- via [ArkaneNetwork](https://arkane.network/):
-  - kryptokrauts@protonmail.com
-
-Don't forget to [download Brave](https://brave.com/kry019) and send us tips from rewards you earned by watching advertisements :-)
+- Visit our kraut[**SUPPORT**](/support) page to find various ways to honor our work :-)

@@ -97,3 +97,6 @@ If you are already a Brave user you can send us some tips ;-)
 - [Brave FAQ](https://brave.com/faq/) (official)
 - [BATGROWTH.com](https://batgrowth.com/) (unofficial statistics)
    - https://medium.com/@MaxenceCornet/how-does-batgrowth-com-work-3ba714336b77
+
+## Support us
+- Visit our kraut[**SUPPORT**](/support) page to find various ways to honor our work :-)

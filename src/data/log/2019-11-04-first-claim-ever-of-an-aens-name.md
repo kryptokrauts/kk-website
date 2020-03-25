@@ -94,10 +94,4 @@ The `nameFee` of all claimed names will be collected and locked in the account *
 We finally managed to claim and own our name and successfully performed an update transaction to set a pointer to our account. If you like the story send us some tips to **kryptokrauts.chain** =)
 
 ## Support us
-Do you like our work? We would be happy about a small donation:
-- æternity:
-  - ak_5z1fmzTKR1GA1P7qiLDCC1s3V7AK2RRpNbXqUhfHQbUeg7mmV
-- via [ArkaneNetwork](https://arkane.network/):
-  - kryptokrauts@protonmail.com
-
-Don't forget to [download Brave](https://brave.com/kry019) and send us tips from rewards you earned by watching advertisements :-)
+- Visit our kraut[**SUPPORT**](/support) page to find various ways to honor our work :-)

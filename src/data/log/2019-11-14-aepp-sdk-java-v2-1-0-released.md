@@ -5,7 +5,7 @@ path: "/log/aepp-sdk-java-2-1-0-released"
 author: Marco Walz
 introText: "Small fixes and enhancements."
 thumbnail: "/img/thumbnails/javasdk.png"
-tags: ["æternity", "SDK", "Java"]
+tags: ["æternity", "SDK", "Java", "Kotlin", "Scala"]
 ---
 The release [v2.1.0](https://github.com/kryptokrauts/aepp-sdk-java/releases/tag/v2.1.0) ships some fixes and enhancements. Additionally we renamed some attributes and model-classes. If you already used [v2.0.0](https://github.com/kryptokrauts/aepp-sdk-java/releases/tag/v2.0.0) it might be needed to fix these changes.
 
@@ -29,10 +29,4 @@ If you encounter problems using the SDK please [create a ticket](https://github.
 If you have any general questions about the SDK please visit the [official forum](https://forum.aeternity.com/c/aepplications/sdk) and ask there.
 
 ## Support us
-Do you like our work? We would be happy about a small donation:
-- æternity:
-  - ak_5z1fmzTKR1GA1P7qiLDCC1s3V7AK2RRpNbXqUhfHQbUeg7mmV
-- via [ArkaneNetwork](https://arkane.network/):
-  - kryptokrauts@protonmail.com
-
-Don't forget to [download Brave](https://brave.com/kry019) and send us tips from rewards you earned by watching advertisements :-)
+- Visit our kraut[**SUPPORT**](/support) page to find various ways to honor our work :-)

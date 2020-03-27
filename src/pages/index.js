@@ -1,15 +1,14 @@
 import { graphql } from "gatsby";
 import React from "react";
 import Header from "../components/header";
-import Projects from "../components/projects";
-import Team from "../components/team";
+import VideoList from "../components/videoList";
 
 export default ({ data }) => (
   <div className="main-container">
     <Header />
     <div className="content">
-      <h2>Team</h2>
-      <Team members={data.allTeamYaml.edges} />
+      <h2>Community</h2>
+      <VideoList />
       <h2>Mission</h2>
       <blockquote>
         <p>
@@ -21,8 +20,6 @@ export default ({ data }) => (
           We have many ideas we want to bring to life and invite you to <a href="https://discord.gg/ZZTQgQb" target="_blank" rel="noopener noreferrer">join our discussion</a> on Discord to play a part in the growth of kryptokrauts!
       </p>
       </blockquote>
-      <h2>Projects</h2>
-      <Projects items={data.allProjectsYaml.edges} />
     </div>
   </div>
 )

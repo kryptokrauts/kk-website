@@ -2,11 +2,23 @@ module.exports = {
   siteMetadata: {
     title: `kryptokrauts`,
     founded: 2018 - 01 - 13,
-    links: {
-      github: `https://github.com/kryptokrauts`,
-      twitter: `https://twitter.com/kryptokrauts`,
-      discord: `https://discord.gg/ZZTQgQb`
-    }
+    links: [{
+      logo: `/img/logos/github-logo.png`,
+      url: `https://github.com/kryptokrauts`,
+      label: 'GitHub'
+    }, {
+      logo: `/img/logos/twitter-logo.png`,
+      url: `https://twitter.com/kryptokrauts`,
+      label: 'Twitter'
+    }, {
+      logo: `/img/logos/discord-logo.png`,
+      url: `https://discord.gg/ZZTQgQb`,
+      label: 'Discord'
+    }, {
+      logo: `/img/logos/pepo-logo.png`,
+      url: `https://pepo.com/communities/kryptokrauts`,
+      label: 'pepo'
+    }]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

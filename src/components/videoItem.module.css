@@ -1,0 +1,63 @@
+.container {
+  position: relative;
+  width: 200px;
+  height: 355px;
+  overflow: hidden;
+  margin: 5px;
+}
+
+.video {
+  width: 100%;
+}
+
+.likes {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  bottom: 5px;
+  right: -40px;
+  z-index: 2;
+  transition: all 0.2s ease-in-out;
+}
+
+.container:hover .likes {
+  right: 5px;
+}
+
+.likes-counter {
+  z-index: 2;
+  font-weight: bold;
+}
+
+.likes-image {
+  content: "";
+  background-image: url(/img/logos/pepo-logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+}
+
+.control {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.3);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: rgba(255,255,255,0.4);
+  font-size: 100px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.control:hover {
+  opacity: 1;
+}

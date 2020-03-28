@@ -21,7 +21,7 @@ export default ({ data }) => (
           We have many ideas we want to bring to life and invite you to <a href="https://discord.gg/ZZTQgQb" target="_blank" rel="noopener noreferrer">join our discussion</a> on Discord to play a part in the growth of kryptokrauts!
       </p>
       </blockquote>
-      <h2>Join Us</h2>
+      <h2>Get Involved</h2>
       <Social providers={data.site.siteMetadata.links} />
     </div>
   </div>

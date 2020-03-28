@@ -16,7 +16,7 @@ module.exports = {
       label: 'Discord'
     }, {
       logo: `/img/logos/pepo-logo.png`,
-      url: `https://join.pepo.com/CRSVEF`,
+      url: `https://pepo.com/communities/kryptokrauts`,
       label: 'pepo'
     }]
   },

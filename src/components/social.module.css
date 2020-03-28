@@ -1,18 +1,15 @@
 .container {
   display: flex;
-  height: 30px;
+  flex-direction: row;
+  margin-bottom: 30px;
 }
 
-.icon {
-  margin: 0 5px;
-  height: 100%;
-  line-height: 100%;
+.social-provider {
+  height: 50px;
+  margin: 10px;
+  cursor: pointer;
 }
 
-.icon:not(.inactive):hover {
-  color: #999;
-}
-
-.icon i {
+.social-provider img {
   height: 100%;
 }

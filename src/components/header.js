@@ -4,7 +4,6 @@ import { Helmet } from "react-helmet";
 import { useScroll } from "../common/useScroll";
 import headerStyles from "./header.module.css";
 import CenteredLogo from "./logo";
-import Social from "./social";
 
 export default () => {
 
@@ -14,7 +13,6 @@ export default () => {
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
   const headerRenderer = (data) => {
-    const metaInfo = data.site.siteMetadata;
     const menu = data.allMenuYaml.edges.map(item => item.node);
     return (
       <div className={headerStyles.header + ' ' + (scrolled ? headerStyles.scrolled : '')}>
@@ -34,7 +32,6 @@ export default () => {
           ))
           }
         </div>
-        <Social className={headerStyles.socialinfo} providers={metaInfo.links} />
         <div className={headerStyles.menuMobileLauncher} onClick={toggleMobileMenu}>
           <i className="fas fa-bars"></i>
         </div>
@@ -57,17 +54,6 @@ export default () => {
     <StaticQuery
       query={graphql`
         query {
-          site {
-            siteMetadata {
-              title,
-              founded,
-              links {
-                github,
-                twitter,
-                discord
-              }
-            }
-          }
           allMenuYaml {
             edges {
               node {

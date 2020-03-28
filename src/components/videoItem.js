@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import VideoItemModule from "./videoItem.module.css";
 
 export default ({ data }) => {
@@ -12,11 +12,19 @@ export default ({ data }) => {
     videoRef.current.play();
     updatePlaying(true);
   };
-  const pause = () => {
+
+  const resetVideo = () => {
     videoRef.current.pause();
     videoRef.current.currentTime = 0;
     updatePlaying(false);
-  }
+  };
+
+  useEffect(() => {
+    const videoEl = videoRef.current;
+    videoEl.addEventListener('ended', resetVideo);
+    return () => videoEl.removeEventListener('ended', resetVideo);
+  });
+
   return (
     <div className={VideoItemModule.container}>
       <div className={VideoItemModule.likes} title="Likes">
@@ -29,7 +37,7 @@ export default ({ data }) => {
     </video>
       {
         isPlaying ? (
-          <div className={VideoItemModule.control} onClick={pause}>
+          <div className={VideoItemModule.control} onClick={resetVideo}>
             <i className="far fa-pause-circle"></i>
           </div>
         ) : (

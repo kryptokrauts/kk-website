@@ -52,8 +52,11 @@ export default () => {
   const sliderIndicator = videoList
     .map((_, index) => index);
 
-  fetchVideos()
-    .then(videos => updateVideoList(videos));
+  // otherwise the site cannot be built
+  if (typeof window !== `undefined`) {
+    fetchVideos()
+      .then(videos => updateVideoList(videos));
+  }
 
   return (
     <div className={VideoSliderModule.slider}>

@@ -1,14 +1,14 @@
 import { graphql } from "gatsby";
 import React from "react";
 import Header from "../components/header";
-import VideoList from "../components/videoList";
+import VideoSlider from "../components/videoSlider";
 
 export default ({ data }) => (
   <div className="main-container">
     <Header />
     <div className="content">
       <h2>Community</h2>
-      <VideoList />
+      <VideoSlider />
       <h2>Mission</h2>
       <blockquote>
         <p>

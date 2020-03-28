@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import VideoItemModule from "./videoItem.module.css";
 
 export default ({ data }) => {
+  if (!data) {
+    return (<div></div>);
+  }
+
   const [isPlaying, updatePlaying] = useState(false);
   const videoRef = React.createRef();
   const play = () => {
@@ -14,28 +18,26 @@ export default ({ data }) => {
     updatePlaying(false);
   }
   return (
-    <div class={VideoItemModule.container}>
-      <div class={VideoItemModule.likes} title="Likes">
-        <div class={VideoItemModule.likesCounter}>{data.total_contributors}</div>
-        <div class={VideoItemModule.likesImage}></div>
+    <div className={VideoItemModule.container}>
+      <div className={VideoItemModule.likes} title="Likes">
+        <div className={VideoItemModule.likesCounter}>{data.total_contributors}</div>
+        <div className={VideoItemModule.likesImage}></div>
       </div>
-      <video ref={videoRef} class={VideoItemModule.video}>
+      <video ref={videoRef} className={VideoItemModule.video}>
         <source src={data.video_url} type="video/mp4" />
         Your browser does not support the video tag.
     </video>
       {
         isPlaying ? (
-          <div class={VideoItemModule.control} onClick={pause}>
-            <i class="far fa-pause-circle"></i>
+          <div className={VideoItemModule.control} onClick={pause}>
+            <i className="far fa-pause-circle"></i>
           </div>
         ) : (
-            <div class={VideoItemModule.control} onClick={play}>
-              <i class="far fa-play-circle"></i>
+            <div className={VideoItemModule.control} onClick={play}>
+              <i className="far fa-play-circle"></i>
             </div>
           )
       }
-
-
     </div>
   )
 }

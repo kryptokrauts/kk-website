@@ -21,6 +21,7 @@ export default ({ data }) => {
 
   useEffect(() => {
     const videoEl = videoRef.current;
+    videoEl.setAttribute("playsinline", true);
     videoEl.addEventListener('ended', resetVideo);
     return () => videoEl.removeEventListener('ended', resetVideo);
   });
@@ -31,7 +32,8 @@ export default ({ data }) => {
         <div className={VideoItemModule.likesCounter}>{data.total_contributors}</div>
         <div className={VideoItemModule.likesImage}></div>
       </div>
-      <video ref={videoRef} className={VideoItemModule.video}>
+      <video ref={videoRef} className={VideoItemModule.video}
+        poster={data.poster_image}>
         <source src={data.video_url} type="video/mp4" />
         Your browser does not support the video tag.
     </video>

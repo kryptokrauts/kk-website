@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import VideoItem from "./videoItem";
 import VideoSliderModule from "./videoSlider.module.css";
 
-const fetchVideos = () => fetch('https://api.kryptokrauts.com/pepo/v1/videos?limit=5')
-  .then(response => response.json());
-
 const SliderButton = ({ onClick, selected }) => (
   <div onClick={onClick} className={
     selected ?
@@ -45,22 +42,15 @@ const SliderDisplay = ({ items, active }) => {
   )
 }
 
-export default () => {
-  const [videoList, updateVideoList] = useState([]);
+export default ({ videos }) => {
   const [videoIndex, updateVideoIndex] = useState(0);
 
-  const sliderIndicator = videoList
+  const sliderIndicator = videos
     .map((_, index) => index);
-
-  // otherwise the site cannot be built
-  if (typeof window !== `undefined`) {
-    fetchVideos()
-      .then(videos => updateVideoList(videos));
-  }
 
   return (
     <div className={VideoSliderModule.slider}>
-      <SliderDisplay items={videoList} active={videoIndex} />
+      <SliderDisplay items={videos} active={videoIndex} />
       <SliderControl items={sliderIndicator} active={videoIndex} onChange={updateVideoIndex} />
     </div>
   )

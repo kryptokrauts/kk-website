@@ -3,7 +3,7 @@ import { openURL } from "../utils/common.util";
 import socialStyle from "./social.module.css";
 
 const SocialProvider = ({ data }) => (
-  <div onClick={() => openURL(data.url)} className={socialStyle.socialProvider}>
+  <div onClick={() => openURL(data.url, true)} className={socialStyle.socialProvider}>
     <img src={data.logo} />
   </div>
 )

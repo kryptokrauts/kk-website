@@ -5,8 +5,8 @@ title: "David Chaum: Blind Signatures for Untraceable Payments"
 path: ""
 author: ""
 icon: "fas fa-signature"
-thumbnail: ""
-thumbnailSource: ""
+thumbnail: "https://www.chaum.com/assets/images/Brazil%20photo%20cropped.jpg"
+thumbnailSource: "chaum.com"
 externalLink: "http://www.hit.bme.hu/~buttyan/courses/BMEVIHIM219/2009/Chaum.BlindSigForPayment.1982.PDF"
 ---
 

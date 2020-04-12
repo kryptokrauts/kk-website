@@ -5,8 +5,8 @@ title: "David Chaum: DigiCash \"eCash\""
 path: ""
 author: ""
 icon: "fas fa-coins"
-thumbnail: ""
-thumbnailSource: ""
+thumbnail: "https://www.chaum.com/assets/images/Brazil%20photo%20cropped.jpg"
+thumbnailSource: "chaum.com"
 externalLink: "https://de.wikipedia.org/wiki/ECash"
 ---
 

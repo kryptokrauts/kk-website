@@ -18,6 +18,7 @@ export default () => {
       <div className={headerStyles.header + ' ' + (scrolled ? headerStyles.scrolled : '')}>
         <Helmet>
           <meta charSet="utf-8" />
+          <meta name="aens-name" content="kryptokrauts.chain" />
           <title>kryptokrauts.com</title>
         </Helmet>
         <CenteredLogo />

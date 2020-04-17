@@ -29,7 +29,7 @@ export default ({ data }) => {
   return (
     <div className={VideoItemModule.container}>
       <div className={VideoItemModule.likes} title="Likes">
-        <div className={VideoItemModule.likesCounter}>{data.total_contributors}</div>
+        <div className={VideoItemModule.likesCounter}>{data.total_contribution_amount}</div>
         <div className={VideoItemModule.likesImage}></div>
       </div>
       <video ref={videoRef} className={VideoItemModule.video}

@@ -137,7 +137,7 @@ As already mentioned æternity introduced a new functional [OCaml](https://ocaml
 
 `youtube: a77DGGzMyN8`
 
-Instead [FATE](https://www.youtube.com/watch?v=a77DGGzMyN8) was invented which is a type safe high-level virtual machine which contracts safe up to 90% storage compared to similar EVM contracts.
+Instead [FATE](https://github.com/aeternity/protocol/blob/master/contracts/fate.md) was invented which is a type safe high-level virtual machine which contracts safe up to 90% storage compared to similar EVM contracts.
 
 ### Additional features (not explicitely used by the Superhero platform)
 Æternity provides many other great features. We encourage everyone to check out the [website](https://aeternity.com) to learn more about æternity. In this article we want to highlight the answers of æternity to existing scalability issues.

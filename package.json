@@ -14,19 +14,18 @@
     "deploy": "gatsby build --prefix-paths"
   },
   "dependencies": {
-    "gatsby": "^2.4.3",
+    "gatsby": "^2.23.3",
     "gatsby-plugin-google-gtag": "^1.1.21",
-    "gatsby-plugin-react-helmet": "^3.0.12",
-    "gatsby-plugin-twitter": "^2.0.13",
-    "gatsby-remark-autolink-headers": "^2.1.3",
+    "gatsby-plugin-twitter": "^2.3.4",
+    "gatsby-remark-autolink-headers": "^2.3.5",
     "gatsby-remark-embed-video": "^2.0.1",
     "gatsby-remark-graph": "^0.2.2",
     "gatsby-source-filesystem": "^2.0.28",
     "gatsby-transformer-remark": "^2.3.12",
     "gatsby-transformer-yaml": "^2.1.12",
     "qrcode.react": "^1.0.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {

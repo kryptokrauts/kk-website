@@ -12,9 +12,9 @@ export default ({ data }) => (
       <div className={supportStyle.data}>
         <div className={supportStyle.container}>
           <h1>Give us some of your superpower!</h1>
-          <div class="superhero-large"></div>
+          <div className="superhero-large"></div>
           <SuperheroButton />
-          <p>Superhero is a decentralized social tipping platform. Read our <b><i><a href="/log/superhero-truly-decentralized-social-tipping-platform">article</a></i></b> and become a Superhero!</p>
+          <p>Superhero is a decentralized social tipping platform. Read our <b><i><a href="/log/superhero-a-truly-decentralized-social-tipping-platform">article</a></i></b> and become a Superhero!</p>
 
           <h1>Download Brave</h1>
           <a href="https://brave.com/kry019"><img src="/img/brave/banner_horizontal.png" alt="Download Brave"/></a>

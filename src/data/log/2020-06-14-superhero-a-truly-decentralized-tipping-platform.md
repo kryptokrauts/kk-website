@@ -1,7 +1,7 @@
 ---
 publishedOn: "2020-06-14"
 title: "Superhero.com - a truly decentralized social tipping platform!"
-path: "/log/superhero-truly-decentralized-social-tipping-platform"
+path: "/log/superhero-a-truly-decentralized-social-tipping-platform"
 author: Marco Walz
 introText: "Become a superhero and learn how æternity is being utilized to enable truly decentralized tips!"
 thumbnail: "/img/thumbnails/superhero.jpg"
@@ -15,7 +15,7 @@ This means that no funds will be lost due to commissions and publishers do NOT n
 
 <a href="https://superhero.com" target="_blank"><img src="/img/logos/superhero.jpeg" class="center"></a>
 
-Sounds too good to be true? We can certainly say that there is absolutely no hidden downside! The source code of all components is available [open source](#100-open-source) on GitHub.
+Sounds too good to be true? We can certainly say that there is absolutely no hidden downside! The source code of all components is [open sourced](#100-open-source) on GitHub.
 
 ## How does that work? What's going on behind the scenes?
 A regular user won't notice much of the "magic" that is happening behind the scenes. But for all those interested we want to provide a deep dive on what's going on behind the scenes and explain why the [**æternity blockchain**](https://aeternity.com) is perfect to build a platform like Superhero upon.

@@ -21,7 +21,6 @@ module.exports = {
     }]
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -77,7 +76,7 @@ module.exports = {
                   embedURL: (videoId) => `https://www.youtube-nocookie.com/embed/${videoId}`,
                 },
                 {
-                  id: 'vimdeo',
+                  id: 'vimeo',
                   embedURL: (videoId) => `https://player.vimeo.com/video/${videoId}`
                 }
               ] //Optional: Override URL of a service provider, e.g to enable youtube-nocookie support

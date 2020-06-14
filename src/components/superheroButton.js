@@ -18,7 +18,7 @@ function handleLoad() {
 export default () => {
     return <>
         <Helmet
-            script={[{ src: 'https://unpkg.com/@aeternity/superhero-button/dist/superhero-button.styles.js' }]}
+            script={[{ src: '/scripts/superhero-button.styles.js' }]}
             // Helmet doesn't support `onload` in script objects so we have to hack in our own
             onChangeClientState={(newState, addedTags) => handleScriptInject(addedTags)}
         />

@@ -1,6 +1,7 @@
 import { graphql } from "gatsby";
 import React from "react";
 import Header from "../components/header";
+import SuperheroButton from "../components/superheroButton";
 import { dateFormatter } from "../utils/common.util";
 import blogTemplateModule from "./blogTemplate.module.css";
 
@@ -12,6 +13,7 @@ export default function Template({
   return (
     <div>
       <Header />
+      <SuperheroButton />
       <div className="content">
         <div className={blogTemplateModule.post}>
           <h1 className={blogTemplateModule.title}>{frontmatter.date ? dateFormatter(frontmatter.date) + " - " : ""}{frontmatter.title}</h1>

@@ -97,3 +97,10 @@ blockquote cite{
         margin-top: 70px;
     }
 }
+
+.center, .embedVideo-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

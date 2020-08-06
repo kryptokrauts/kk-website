@@ -8,6 +8,12 @@ thumbnail: "/img/thumbnails/pepo.png"
 thumbnailSource: ""
 tags: ["Pepo", "OST", "community"]
 ---
+<hr/><hr/><hr/>
+
+***Update (06.08.2020)***  
+Unfortunately the project the Pepo team announced to shut down the application on 31.07.2020 and the team of OST shifts its focus to the development of a fully decentralised protocol. We hope to see a relaunch of this great application in the future.
+
+<hr/><hr/><hr/>
 
 In november 2019 [OST.com released a new social app](https://medium.com/the-pepo-app/introducing-pepo-the-new-social-app-connecting-the-crypto-community-34181149f84a) called [**Pepo**](https://join.pepo.com/CRSVEF). The app is (currently) specifically targeting the ***crypto community*** and provides the ability to create ***30 seconds videos***. You can somehow compare it to Twitter but instead of writing short messages and answer to those with short messages you create short videos and answer with short videos.
 

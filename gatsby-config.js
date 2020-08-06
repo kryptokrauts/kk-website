@@ -14,10 +14,6 @@ module.exports = {
       logo: `/img/logos/discord-logo.png`,
       url: `https://discord.gg/ZZTQgQb`,
       label: 'Discord'
-    }, {
-      logo: `/img/logos/pepo-logo.png`,
-      url: `https://pepo.com/communities/kryptokrauts`,
-      label: 'pepo'
     }]
   },
   plugins: [

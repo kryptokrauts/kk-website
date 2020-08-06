@@ -1,0 +1,64 @@
+- project: aepp-sdk-java
+  year: 2019
+  description: A community developed Java SDK to interact with the æternity blockchain.
+  links:
+    website: https://github.com/kryptokrauts/aepp-sdk-java
+  tags:
+    - æternity
+    - blockchain
+    - Java
+    - SDK
+- project: contraect-maven-plugin
+  year: 2019
+  description: A maven plugin to generate java classes for smart contracts from sophia source code. The generated classes make use of the aepp-sdk-java and provide methods to deploy contracts and call the respective entrypoint functions. 
+  links:
+    website: https://github.com/kryptokrauts/contraect-maven-plugin
+  tags:
+    - æternity
+    - blockchain
+    - Sophia
+    - smart contracts
+    - codegen
+    - Maven
+- project: aens-name-claimer
+  year: 2019
+  description: A demo application that uses our aepp-sdk-java to claim names on the æternity blockchain.
+  links:
+    website: https://github.com/kryptokrauts/aens-name-claimer
+  tags:
+    - ÆNS
+    - æternity
+    - naming system
+- project: aepp-showcase-android
+  year: 2020
+  description: A simple mobile application that shows how to include our aepp-sdk-java and transfer AE from Alice to Bob.
+  links:
+    website: https://github.com/kryptokrauts/aepp-showcase-android
+  tags:
+    - æternity
+    - Android
+    - Kotlin
+- project: contraect-showcase-maven
+  year: 2020
+  description: A demo application that shows how to make use of our contraect-maven-plugin. The generated Java classes enable unit testing of Sophia smart contracts using Java.
+  links:
+    website: https://github.com/kryptokrauts/contraect-showcase-maven
+  tags:
+    - æternity
+    - blockchain
+    - Sophia
+    - smart contracts
+    - codegen
+    - Maven
+- project: ænalytics
+  year: 2020
+  description: The best user interface for the æternity blockchain. Users can observe activities on the blockchain and even perform actions when they establish a connection to their wallet.
+  links:
+    website: https://aenalytics.org
+  tags:
+    - æternity
+    - transactions
+    - statistics
+    - ÆNS
+    - naming system
+    - oracles

@@ -12,8 +12,8 @@ export default ({ data }) => {
         <h2>Mission</h2>
         <blockquote>
           <p>
-            We create tools and content for the crypto community to spread awareness - created by people and made for people.
-            Currently the project is evolving and we are very curious about its future development.
+            We create tools and content for the crypto community to spread awareness.
+            Currently our initiative is evolving and we are very curious about its future development.
       We encourage you to check out our <a href="/timeline">krautTIMELINE</a> to which everybody is invited to contribute!
       </p>
           <p>

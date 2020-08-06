@@ -11,7 +11,7 @@ tags: ["Pepo", "OST", "community"]
 <hr/><hr/><hr/>
 
 ***Update (06.08.2020)***  
-Unfortunately the project the Pepo team announced to shut down the application on 31.07.2020 and the team of OST shifts its focus to the development of a fully decentralised protocol. We hope to see a relaunch of this great application in the future.
+Unfortunately the Pepo team announced to shut down the application on 31.07.2020 and the team of OST shifts its focus to the development of a fully decentralised protocol. We hope to see a relaunch of this great application in the future.
 
 <hr/><hr/><hr/>
 

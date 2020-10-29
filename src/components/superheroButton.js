@@ -16,7 +16,7 @@ export default () => {
     }
     return <>
         <Helmet
-            script={[{ src: '/scripts/superhero-button.styles.js' }]}
+            script={[{ src: 'https://unpkg.com/@aeternity/superhero-button/dist/superhero-button.styles.js' }]}
             onChangeClientState={handleChangeClientState}
         />
     </>
